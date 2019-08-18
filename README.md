@@ -4,6 +4,12 @@
 
 This is a tool for developers to easily adapt dark mode in iOS 13.
 
+![video](https://raw.githubusercontent.com/Elenionl/EasyDarkMode/master/Sample/demo.mov?token=AD5OKW6SDH6NR7ZNXDIYRDK5MKS7U)
+
+![light](https://github.com/Elenionl/EasyDarkMode/blob/master/Sample/image_light.png?raw=true)
+
+![dark](https://github.com/Elenionl/EasyDarkMode/blob/master/Sample/image_dark.png?raw=true)
+
 ## Features
 
 * Shortcut method to create UIColor with different user interface type (dark mode).
