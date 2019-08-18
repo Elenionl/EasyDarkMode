@@ -8,6 +8,8 @@
 
 This is a tool for developers to easily adapt dark mode in iOS 13.
 
+[中文版本](https://zhuanlan.zhihu.com/p/78728387)
+
 ![video](https://raw.githubusercontent.com/Elenionl/EasyDarkMode/master/Sample/demo.mov?token=AD5OKW6SDH6NR7ZNXDIYRDK5MKS7U)
 
 ![light](https://github.com/Elenionl/EasyDarkMode/blob/master/Sample/image_light.png?raw=true)
@@ -105,3 +107,9 @@ There are functins similar with SDWebImage
 @end
 
 ```
+
+## TODO
+
+- [] Find a way to support NSTextAttachment in NSAttributedString.
+- [] Find a way to support web image for NSTextAttachment.
+- [] Support KingFisher.
