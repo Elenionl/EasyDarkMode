@@ -110,12 +110,12 @@ There are functins similar with SDWebImage
 
 ## TODO
 
-✅ Support UIImage/UIColor
+🍤 Support UIImage/UIColor
 
-✅ Support SDWebImage
+🥐 Support SDWebImage
 
-☑️ Find a way to support NSTextAttachment in NSAttributedString.
+🍩 Find a way to support NSTextAttachment in NSAttributedString.
 
-☑️ Find a way to support web image for NSTextAttachment.
+   Find a way to support web image for NSTextAttachment.
 
-☑️ Support KingFisher.
+   Support KingFisher.
