@@ -12,6 +12,10 @@ This is a tool for developers to easily adapt dark mode in iOS 13.
 
 * Shortcut method to download remoate image with SDWebImage and create UIImage with different user interface type (dark mode).
 
+* This code can work on from Xcode 9 to Xcode 11.
+
+* It has an various deployment target version from iOS 8 to iOS 13.
+
 ## How to install
 
 ### Using `CocoaPods`
