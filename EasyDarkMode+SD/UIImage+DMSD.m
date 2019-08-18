@@ -11,14 +11,14 @@
 #import "UIImage+DM.h"
 @implementation UIImage (DMSD)
 
-+ (void)dm_imageWithPathStringLight:(NSString *)light dark:(NSString *)dark completion:(void (^)(UIImage * _Nullable, NSError * _Nullable))completion {
++ (void)dmsd_imageWithPathStringLight:(NSString *)light dark:(NSString *)dark completion:(void (^)(UIImage * _Nullable, NSError * _Nullable))completion {
     NSParameterAssert(light);
     NSURL *lightUrl = [NSURL URLWithString:light];
     NSURL *darkUrl = dark ? [NSURL URLWithString:dark] : nil;
-    [self dm_imageWithUrlLight:lightUrl dark:darkUrl completion:completion];
+    [self dmsd_imageWithUrlLight:lightUrl dark:darkUrl completion:completion];
 }
 
-+ (void)dm_imageWithUrlLight:(NSURL *)light dark:(NSURL *)dark completion:(void (^)(UIImage * _Nullable, NSError * _Nullable))completion {
++ (void)dmsd_imageWithUrlLight:(NSURL *)light dark:(NSURL *)dark completion:(void (^)(UIImage * _Nullable, NSError * _Nullable))completion {
     SDWebImageManager *manager = SDWebImageManager.sharedManager;
     __block BOOL darkFinish = false;
     __block BOOL lightFinish = false;

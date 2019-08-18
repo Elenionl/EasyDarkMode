@@ -12,17 +12,17 @@
 
 @implementation UIImageView (DMSD)
 
-- (void)dm_setImageUrlLight:(NSURL *)light dark:(NSURL *)dark {
+- (void)dmsd_setImageUrlLight:(NSURL *)light dark:(NSURL *)dark {
     __weak __auto_type selfWeak = self;
-    [UIImage dm_imageWithUrlLight:light dark:dark completion:^(UIImage * _Nullable image, NSError * _Nullable error) {
+    [UIImage dmsd_imageWithUrlLight:light dark:dark completion:^(UIImage * _Nullable image, NSError * _Nullable error) {
         selfWeak.image = image;
     }];
 }
 
-- (void)dm_setImageStringLight:(NSString *)light dark:(NSString *)dark {
+- (void)dmsd_setImageStringLight:(NSString *)light dark:(NSString *)dark {
     NSURL *lightUrl = light ? [NSURL URLWithString:light] : nil;
     NSURL *darkUrl = dark ? [NSURL URLWithString:dark] : nil;
-    [self dm_setImageUrlLight:lightUrl dark:darkUrl];
+    [self dmsd_setImageUrlLight:lightUrl dark:darkUrl];
 }
 
 @end

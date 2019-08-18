@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C4B472F2309A17A000F18D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C4B472E2309A17A000F18D0 /* README.md */; };
 		2C4B47312309A489000F18D0 /* EasyDarkMode.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2C4B47302309A489000F18D0 /* EasyDarkMode.podspec */; };
+		2C58BBD62309C6BF00F62BD0 /* EasyDarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C899E3523007E3000BBED4F /* EasyDarkMode.framework */; };
+		2C58BBD72309C6BF00F62BD0 /* EasyDarkMode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C899E3523007E3000BBED4F /* EasyDarkMode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C899E3A23007E3000BBED4F /* EasyDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E3823007E3000BBED4F /* EasyDarkMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C899E4723007E3C00BBED4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E4623007E3C00BBED4F /* AppDelegate.swift */; };
 		2C899E4923007E3C00BBED4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E4823007E3C00BBED4F /* SceneDelegate.swift */; };
@@ -27,14 +29,12 @@
 		2C899E7A23007F2200BBED4F /* UIButton+DMSD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E6E23007F2100BBED4F /* UIButton+DMSD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C899E7C23007F2200BBED4F /* UIImageView+DMSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E7023007F2200BBED4F /* UIImageView+DMSD.m */; };
 		2C899E7F23007F3700BBED4F /* EasyDarkMode+SD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E7D23007F3700BBED4F /* EasyDarkMode+SD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CB9EC1723008299006E944D /* EasyDarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C899E3523007E3000BBED4F /* EasyDarkMode.framework */; };
-		2CB9EC1823008299006E944D /* EasyDarkMode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C899E3523007E3000BBED4F /* EasyDarkMode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		739C0A4AF03ED821D8C02880 /* Pods_EasyDarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CD434965FAB4FCDBFB6ED4 /* Pods_EasyDarkMode.framework */; };
 		D84A520585A6D061254BD38E /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9561418EFE6969221FE652 /* Pods_Demo.framework */; };
-		EC99EA942286472855CBF3E1 /* libPods-EasyDarkMode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC9B2405CB788DFA936CDD1 /* libPods-EasyDarkMode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2CB9EC1923008299006E944D /* PBXContainerItemProxy */ = {
+		2C58BBD82309C6BF00F62BD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C899E2C23007E3000BBED4F /* Project object */;
 			proxyType = 1;
@@ -44,13 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2CB9EC1B23008299006E944D /* Embed Frameworks */ = {
+		2C58BBDA2309C6BF00F62BD0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2CB9EC1823008299006E944D /* EasyDarkMode.framework in Embed Frameworks */,
+				2C58BBD72309C6BF00F62BD0 /* EasyDarkMode.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +87,7 @@
 		3A9561418EFE6969221FE652 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BAAB0DD22DF4C64D440AA1 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		74CBA4EBC75FA8436E753320 /* Pods-EasyDarkMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDarkMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyDarkMode/Pods-EasyDarkMode.debug.xcconfig"; sourceTree = "<group>"; };
-		CCC9B2405CB788DFA936CDD1 /* libPods-EasyDarkMode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyDarkMode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8CD434965FAB4FCDBFB6ED4 /* Pods_EasyDarkMode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyDarkMode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC99EA942286472855CBF3E1 /* libPods-EasyDarkMode.a in Frameworks */,
+				739C0A4AF03ED821D8C02880 /* Pods_EasyDarkMode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84A520585A6D061254BD38E /* Pods_Demo.framework in Frameworks */,
-				2CB9EC1723008299006E944D /* EasyDarkMode.framework in Frameworks */,
+				2C58BBD62309C6BF00F62BD0 /* EasyDarkMode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				3A9561418EFE6969221FE652 /* Pods_Demo.framework */,
-				CCC9B2405CB788DFA936CDD1 /* libPods-EasyDarkMode.a */,
+				D8CD434965FAB4FCDBFB6ED4 /* Pods_EasyDarkMode.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,12 +243,12 @@
 				2C899E4123007E3C00BBED4F /* Frameworks */,
 				2C899E4223007E3C00BBED4F /* Resources */,
 				D7439CE46E2D58CD25A3B40F /* [CP] Embed Pods Frameworks */,
-				2CB9EC1B23008299006E944D /* Embed Frameworks */,
+				2C58BBDA2309C6BF00F62BD0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2CB9EC1A23008299006E944D /* PBXTargetDependency */,
+				2C58BBD92309C6BF00F62BD0 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -365,22 +365,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -411,10 +404,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2CB9EC1A23008299006E944D /* PBXTargetDependency */ = {
+		2C58BBD92309C6BF00F62BD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2C899E3423007E3000BBED4F /* EasyDarkMode */;
-			targetProxy = 2CB9EC1923008299006E944D /* PBXContainerItemProxy */;
+			targetProxy = 2C58BBD82309C6BF00F62BD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

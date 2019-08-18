@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (DMSD)
 
-- (void)dm_setImageUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark;
+- (void)dmsd_setImageUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark;
 
-- (void)dm_setImageStringLight:(nullable NSString *)light dark:(nullable NSString *)dark;
+- (void)dmsd_setImageStringLight:(nullable NSString *)light dark:(nullable NSString *)dark;
 
 @end
 
