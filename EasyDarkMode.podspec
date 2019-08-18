@@ -37,11 +37,11 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Elenionl/EasyDarkMode.git", :tag => "#{s.version}" }
 
   s.subspec 'Core' do |ss|
-    ss.source_files  = "EasyDarkMode/**/*.{h, m}"
+    ss.source_files  = "EasyDarkMode"
   end
 
   s.subspec 'SDWebImage' do |ss|
-    ss.source_files = "EasyDarkMode+SD/**/*.{h, m}"
+    ss.source_files = "EasyDarkMode+SD"
     ss.dependency 'EasyDarkMode/Core'
     ss.dependency 'SDWebImage'
   end
