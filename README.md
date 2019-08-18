@@ -64,7 +64,7 @@ pod 'EasyDarkMode/SDWebImage'
 
 ### Create image object with remote images
 
-❗️**Do use EasyDarkMode/SDWebImage**
+❗️**These methods are available EasyDarkMode/SDWebImage**. If you cannot find these methods, try `pod 'EasyDarkMode/SDWebImage'`
 
 ``` Objc
 @interface UIImage (DMSD)
