@@ -69,9 +69,9 @@ pod 'EasyDarkMode/SDWebImage'
 ``` Objc
 @interface UIImage (DMSD)
 
-  + (void)dm_imageWithUrlLight:(NSURL *)light dark:(NSURL * _Nullable)dark completion:(void(^)(UIImage * _Nullable image, NSError * _Nullable error))completion;
+  + (void)dmsd_imageWithUrlLight:(NSURL *)light dark:(NSURL * _Nullable)dark completion:(void(^)(UIImage * _Nullable image, NSError * _Nullable error))completion;
 
-  + (void)dm_imageWithPathStringLight:(NSString *)light dark:(NSString * _Nullable)dark completion:(void(^)(UIImage * _Nullable image, NSError * _Nullable error))completion;
+  + (void)dmsd_imageWithPathStringLight:(NSString *)light dark:(NSString * _Nullable)dark completion:(void(^)(UIImage * _Nullable image, NSError * _Nullable error))completion;
 
 @end
 ```
@@ -82,21 +82,21 @@ There are functins similar with SDWebImage
 
 @interface UIButton (DMSD)
 
-  - (void)dm_setImageUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark forState:(UIControlState)state;
+  - (void)dmsd_setImageUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark forState:(UIControlState)state;
 
-  - (void)dm_setImageStringLight:(nullable NSString *)light dark:(nullable NSString *)dark forState:(UIControlState)state;
+  - (void)dmsd_setImageStringLight:(nullable NSString *)light dark:(nullable NSString *)dark forState:(UIControlState)state;
 
-  - (void)dm_setBackgroundUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark forState:(UIControlState)state;
+  - (void)dmsd_setBackgroundUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark forState:(UIControlState)state;
 
-  - (void)dm_setBackgroundStringLight:(nullable NSString *)light dark:(nullable NSString *)dark forState:(UIControlState)state;
+  - (void)dmsd_setBackgroundStringLight:(nullable NSString *)light dark:(nullable NSString *)dark forState:(UIControlState)state;
 
 @end
 
 @interface UIImageView (DMSD)
 
-  - (void)dm_setImageUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark;
+  - (void)dmsd_setImageUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark;
 
-  - (void)dm_setImageStringLight:(nullable NSString *)light dark:(nullable NSString *)dark;
+  - (void)dmsd_setImageStringLight:(nullable NSString *)light dark:(nullable NSString *)dark;
 
 @end
 
