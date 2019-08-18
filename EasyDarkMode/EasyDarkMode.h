@@ -14,7 +14,6 @@ FOUNDATION_EXPORT double EasyDarkModeVersionNumber;
 //! Project version string for EasyDarkMode.
 FOUNDATION_EXPORT const unsigned char EasyDarkModeVersionString[];
 
-#import <EasyDarkMode/NSTextAttachment+DM.h>
 #import <EasyDarkMode/UIColor+DM.h>
 #import <EasyDarkMode/UIImage+DM.h>
 

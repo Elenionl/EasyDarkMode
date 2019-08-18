@@ -26,20 +26,10 @@
 #endif
 }
 
-+ (UIImage *)dm_imageForAttachmentWithImageLight:(UIImage *)light dark:(UIImage *)dark {
-#if __IPHONE_13_0
-    if (@available(iOS 13.0, *)) {
-        UIImage *image = light.copy;
-        [image.imageAsset registerImage:dark ?: light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark]];
-        [image.imageAsset registerImage:light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight]];
-        [image.imageAsset registerImage:light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleUnspecified]];
-        return image;
-    } else {
-#endif
-        return light;
-#if __IPHONE_13_0
-    }
-#endif
++ (UIImage *)dm_imageWithNameLight:(NSString *)light dark:(NSString *)dark {
+    UIImage *lightImage = [UIImage imageNamed:light];
+    UIImage *darkImage = [UIImage imageNamed:dark];
+    return [self dm_imageWithImageLight:lightImage dark:darkImage];
 }
 
 @end

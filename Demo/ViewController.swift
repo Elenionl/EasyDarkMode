@@ -56,23 +56,10 @@ class ViewController: UIViewController {
             make.top.equalTo(easyDarkModeColorLabel.snp.bottom).offset(10)
             make.height.equalTo(25)
         }
-        scrollView.addSubview(easyDarkModeAttachmentLabel)
-        scrollView.addSubview(easyDarkModeAttachment)
-        easyDarkModeAttachmentLabel.snp.makeConstraints { (make) in
-            make.left.right.equalToSuperview()
-            make.top.equalTo(easyDarkModeColor.snp.bottom).offset(10)
-            make.height.equalTo(25)
-        }
-        easyDarkModeAttachment.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(easyDarkModeAttachmentLabel.snp.bottom).offset(10)
-            make.height.equalTo(25)
-            make.width.equalTo(200)
-        }
         scrollView.addSubview(divider)
         divider.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
-            make.top.equalTo(easyDarkModeAttachment.snp.bottom).offset(10)
+            make.top.equalTo(easyDarkModeColor.snp.bottom).offset(10)
             make.height.equalTo(2)
         }
         scrollView.addSubview(easySdImageLabel)
@@ -112,19 +99,6 @@ class ViewController: UIViewController {
             make.centerX.equalToSuperview()
             make.top.equalTo(easySdImageButtonLabel.snp.bottom).offset(10)
             make.height.equalTo(130)
-            make.width.equalTo(200)
-        }
-        scrollView.addSubview(easySdImageAttachmentLabel)
-        scrollView.addSubview(easySdImageAttachment)
-        easySdImageAttachmentLabel.snp.makeConstraints { (make) in
-            make.left.right.equalToSuperview()
-            make.top.equalTo(easySdImageButton.snp.bottom).offset(10)
-            make.height.equalTo(25)
-        }
-        easySdImageAttachment.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(easySdImageAttachmentLabel.snp.bottom).offset(10)
-            make.height.equalTo(25)
             make.width.equalTo(200)
             make.bottom.equalToSuperview().offset(-50)
         }
@@ -176,24 +150,6 @@ class ViewController: UIViewController {
         return item
     }()
     
-    lazy var easyDarkModeAttachmentLabel: UILabel = {
-        let item = UILabel()
-        item.text = "Easy dark mode attachment."
-        item.textAlignment = .center
-        return item
-    }()
-    
-    lazy var easyDarkModeAttachment: UILabel = {
-        let item = UILabel()
-        let attributedString = NSMutableAttributedString(string: "This image can change:")
-        let attachment = NSTextAttachment.dm_textAttachment(withImageNameLight: "check_light", dark: "check_dark")
-        attachment.dm_update(with: UIFont.systemFont(ofSize: 14))
-        let imageString = NSAttributedString(attachment: attachment)
-        attributedString.append(imageString)
-        item.attributedText = attributedString
-        return item
-    }()
-    
     lazy var divider: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.dm_color(withColorLight: UIColor.gray, dark: UIColor.lightGray)
@@ -238,22 +194,6 @@ class ViewController: UIViewController {
     lazy var easySdImageButton: UIView = {
         let item = UIButton()
         item.dm_setBackgroundStringLight("http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
-        return item
-    }()
-    
-    lazy var easySdImageAttachmentLabel: UILabel = {
-        let item = UILabel()
-        item.text = "Image in NSAttributedString with SDWebImage."
-        item.textAlignment = .center
-        return item
-    }()
-    
-    lazy var easySdImageAttachment: UIView = {
-        let item = UILabel()
-        let attachment = NSTextAttachment.dm_attachment(withStringLight: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg")
-        attachment.dm_update(with: UIFont.systemFont(ofSize: 14))
-        let string = NSAttributedString(attachment: attachment)
-        item.dm_setAttributedText(string)
         return item
     }()
 }

@@ -9,5 +9,4 @@
 #import <SDWebImage/SDWebImage.h>
 #import <EasyDarkMode/UIImageView+DMSD.h>
 #import <EasyDarkMode/UIButton+DMSD.h>
-#import <EasyDarkMode/NSTextAttachment+DMSD.h>
 #import <EasyDarkMode/UIImage+DMSD.h>
