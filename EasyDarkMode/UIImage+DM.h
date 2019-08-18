@@ -16,10 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)dm_imageWithNameLight:(NSString *)light dark:(nullable NSString *)dark;
 
-+ (UIImage *)dm_imageForAttachmentWithImageLight:(UIImage *)light dark:(UIImage *)dark;
-
-+ (UIImage *)dm_imageForAttachmentWithNameLight:(NSString *)light dark:(NSString *)dark;
-
 @end
 
 NS_ASSUME_NONNULL_END

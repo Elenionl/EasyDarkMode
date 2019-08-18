@@ -42,16 +42,4 @@
 #endif
 }
 
-+ (UIImage *)dm_imageWithNameLight:(NSString *)light dark:(NSString *)dark {
-    UIImage *lightImage = [UIImage imageNamed:light];
-    UIImage *darkImage = [UIImage imageNamed:dark];
-    return [self dm_imageWithImageLight:lightImage dark:darkImage];
-}
-
-+ (UIImage *)dm_imageForAttachmentWithNameLight:(NSString *)light dark:(NSString *)dark {
-    UIImage *lightImage = [UIImage imageNamed:light];
-    UIImage *darkImage = [UIImage imageNamed:dark];
-    return [self dm_imageForAttachmentWithImageLight:lightImage dark:darkImage];
-}
-
 @end

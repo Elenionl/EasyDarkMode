@@ -16,15 +16,9 @@
 		2C899E5323007E3E00BBED4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C899E5123007E3E00BBED4F /* LaunchScreen.storyboard */; };
 		2C899E5F23007ED700BBED4F /* UIColor+DM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E5923007ED600BBED4F /* UIColor+DM.m */; };
 		2C899E6023007ED700BBED4F /* UIColor+DM.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E5A23007ED600BBED4F /* UIColor+DM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C899E6123007ED700BBED4F /* NSTextAttachment+DM.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E5B23007ED600BBED4F /* NSTextAttachment+DM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C899E6223007ED700BBED4F /* UIImage+DM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E5C23007ED600BBED4F /* UIImage+DM.m */; };
 		2C899E6323007ED700BBED4F /* UIImage+DM.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E5D23007ED700BBED4F /* UIImage+DM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C899E6423007ED700BBED4F /* NSTextAttachment+DM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E5E23007ED700BBED4F /* NSTextAttachment+DM.m */; };
-		2C899E7123007F2200BBED4F /* DMAttachmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E6523007F2000BBED4F /* DMAttachmentManager.m */; };
 		2C899E7223007F2200BBED4F /* UIImage+DMSD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E6623007F2000BBED4F /* UIImage+DMSD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C899E7323007F2200BBED4F /* NSTextAttachment+DMSD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E6723007F2100BBED4F /* NSTextAttachment+DMSD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C899E7523007F2200BBED4F /* DMAttachmentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E6923007F2100BBED4F /* DMAttachmentManager.h */; };
-		2C899E7623007F2200BBED4F /* NSTextAttachment+DMSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E6A23007F2100BBED4F /* NSTextAttachment+DMSD.m */; };
 		2C899E7723007F2200BBED4F /* UIImage+DMSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E6B23007F2100BBED4F /* UIImage+DMSD.m */; };
 		2C899E7823007F2200BBED4F /* UIImageView+DMSD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E6C23007F2100BBED4F /* UIImageView+DMSD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C899E7923007F2200BBED4F /* UIButton+DMSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E6D23007F2100BBED4F /* UIButton+DMSD.m */; };
@@ -33,8 +27,6 @@
 		2C899E7F23007F3700BBED4F /* EasyDarkMode+SD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E7D23007F3700BBED4F /* EasyDarkMode+SD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CB9EC1723008299006E944D /* EasyDarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C899E3523007E3000BBED4F /* EasyDarkMode.framework */; };
 		2CB9EC1823008299006E944D /* EasyDarkMode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C899E3523007E3000BBED4F /* EasyDarkMode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2CB9EC1E23032F18006E944D /* DMAttachmentAssocate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB9EC1C23032F18006E944D /* DMAttachmentAssocate.h */; };
-		2CB9EC1F23032F18006E944D /* DMAttachmentAssocate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9EC1D23032F18006E944D /* DMAttachmentAssocate.m */; };
 		D84A520585A6D061254BD38E /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9561418EFE6969221FE652 /* Pods_Demo.framework */; };
 		EC99EA942286472855CBF3E1 /* libPods-EasyDarkMode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC9B2405CB788DFA936CDD1 /* libPods-EasyDarkMode.a */; };
 /* End PBXBuildFile section */
@@ -79,23 +71,15 @@
 		2C899E5423007E3E00BBED4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C899E5923007ED600BBED4F /* UIColor+DM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DM.m"; sourceTree = "<group>"; };
 		2C899E5A23007ED600BBED4F /* UIColor+DM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DM.h"; sourceTree = "<group>"; };
-		2C899E5B23007ED600BBED4F /* NSTextAttachment+DM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextAttachment+DM.h"; sourceTree = "<group>"; };
 		2C899E5C23007ED600BBED4F /* UIImage+DM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DM.m"; sourceTree = "<group>"; };
 		2C899E5D23007ED700BBED4F /* UIImage+DM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DM.h"; sourceTree = "<group>"; };
-		2C899E5E23007ED700BBED4F /* NSTextAttachment+DM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextAttachment+DM.m"; sourceTree = "<group>"; };
-		2C899E6523007F2000BBED4F /* DMAttachmentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAttachmentManager.m; sourceTree = "<group>"; };
 		2C899E6623007F2000BBED4F /* UIImage+DMSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DMSD.h"; sourceTree = "<group>"; };
-		2C899E6723007F2100BBED4F /* NSTextAttachment+DMSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextAttachment+DMSD.h"; sourceTree = "<group>"; };
-		2C899E6923007F2100BBED4F /* DMAttachmentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAttachmentManager.h; sourceTree = "<group>"; };
-		2C899E6A23007F2100BBED4F /* NSTextAttachment+DMSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextAttachment+DMSD.m"; sourceTree = "<group>"; };
 		2C899E6B23007F2100BBED4F /* UIImage+DMSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DMSD.m"; sourceTree = "<group>"; };
 		2C899E6C23007F2100BBED4F /* UIImageView+DMSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DMSD.h"; sourceTree = "<group>"; };
 		2C899E6D23007F2100BBED4F /* UIButton+DMSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DMSD.m"; sourceTree = "<group>"; };
 		2C899E6E23007F2100BBED4F /* UIButton+DMSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DMSD.h"; sourceTree = "<group>"; };
 		2C899E7023007F2200BBED4F /* UIImageView+DMSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DMSD.m"; sourceTree = "<group>"; };
 		2C899E7D23007F3700BBED4F /* EasyDarkMode+SD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyDarkMode+SD.h"; sourceTree = "<group>"; };
-		2CB9EC1C23032F18006E944D /* DMAttachmentAssocate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAttachmentAssocate.h; sourceTree = "<group>"; };
-		2CB9EC1D23032F18006E944D /* DMAttachmentAssocate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAttachmentAssocate.m; sourceTree = "<group>"; };
 		3A9561418EFE6969221FE652 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BAAB0DD22DF4C64D440AA1 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		74CBA4EBC75FA8436E753320 /* Pods-EasyDarkMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDarkMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyDarkMode/Pods-EasyDarkMode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,10 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				2C899E3823007E3000BBED4F /* EasyDarkMode.h */,
-				2C899E5B23007ED600BBED4F /* NSTextAttachment+DM.h */,
-				2C899E5E23007ED700BBED4F /* NSTextAttachment+DM.m */,
-				2CB9EC1C23032F18006E944D /* DMAttachmentAssocate.h */,
-				2CB9EC1D23032F18006E944D /* DMAttachmentAssocate.m */,
 				2C899E5A23007ED600BBED4F /* UIColor+DM.h */,
 				2C899E5923007ED600BBED4F /* UIColor+DM.m */,
 				2C899E5D23007ED700BBED4F /* UIImage+DM.h */,
@@ -179,10 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				2C899E7D23007F3700BBED4F /* EasyDarkMode+SD.h */,
-				2C899E6923007F2100BBED4F /* DMAttachmentManager.h */,
-				2C899E6523007F2000BBED4F /* DMAttachmentManager.m */,
-				2C899E6723007F2100BBED4F /* NSTextAttachment+DMSD.h */,
-				2C899E6A23007F2100BBED4F /* NSTextAttachment+DMSD.m */,
 				2C899E6E23007F2100BBED4F /* UIButton+DMSD.h */,
 				2C899E6D23007F2100BBED4F /* UIButton+DMSD.m */,
 				2C899E6623007F2000BBED4F /* UIImage+DMSD.h */,
@@ -222,14 +198,10 @@
 			files = (
 				2C899E6323007ED700BBED4F /* UIImage+DM.h in Headers */,
 				2C899E6023007ED700BBED4F /* UIColor+DM.h in Headers */,
-				2C899E7323007F2200BBED4F /* NSTextAttachment+DMSD.h in Headers */,
 				2C899E7223007F2200BBED4F /* UIImage+DMSD.h in Headers */,
-				2C899E6123007ED700BBED4F /* NSTextAttachment+DM.h in Headers */,
 				2C899E7A23007F2200BBED4F /* UIButton+DMSD.h in Headers */,
-				2C899E7523007F2200BBED4F /* DMAttachmentManager.h in Headers */,
 				2C899E7823007F2200BBED4F /* UIImageView+DMSD.h in Headers */,
 				2C899E3A23007E3000BBED4F /* EasyDarkMode.h in Headers */,
-				2CB9EC1E23032F18006E944D /* DMAttachmentAssocate.h in Headers */,
 				2C899E7F23007F3700BBED4F /* EasyDarkMode+SD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,11 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C899E5F23007ED700BBED4F /* UIColor+DM.m in Sources */,
-				2C899E7623007F2200BBED4F /* NSTextAttachment+DMSD.m in Sources */,
 				2C899E7723007F2200BBED4F /* UIImage+DMSD.m in Sources */,
-				2CB9EC1F23032F18006E944D /* DMAttachmentAssocate.m in Sources */,
-				2C899E6423007ED700BBED4F /* NSTextAttachment+DM.m in Sources */,
-				2C899E7123007F2200BBED4F /* DMAttachmentManager.m in Sources */,
 				2C899E6223007ED700BBED4F /* UIImage+DM.m in Sources */,
 				2C899E7C23007F2200BBED4F /* UIImageView+DMSD.m in Sources */,
 				2C899E7923007F2200BBED4F /* UIButton+DMSD.m in Sources */,
