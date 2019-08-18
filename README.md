@@ -1,5 +1,9 @@
 # EasyDarkMode
 
+![version](https://img.shields.io/cocoapods/v/EasyDarkMode)
+![license](https://img.shields.io/github/license/Elenionl/EasyDarkMode)
+![platform](https://img.shields.io/cocoapods/p/EasyDarkMode)
+
 ## Introduction
 
 This is a tool for developers to easily adapt dark mode in iOS 13.
