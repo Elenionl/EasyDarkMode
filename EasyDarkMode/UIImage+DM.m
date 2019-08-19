@@ -11,6 +11,9 @@
 @implementation UIImage (DM)
 
 + (UIImage *)dm_imageWithImageLight:(UIImage *)light dark:(UIImage *)dark {
+    if (!light) {
+        return nil;
+    }
 #if __IPHONE_13_0
     if (@available(iOS 13.0, *)) {
         UIImage *image = UIImage.new;
@@ -28,6 +31,9 @@
 
 + (UIImage *)dm_imageWithNameLight:(NSString *)light dark:(NSString *)dark {
     UIImage *lightImage = [UIImage imageNamed:light];
+    if (!lightImage) {
+        return nil;
+    }
     UIImage *darkImage = [UIImage imageNamed:dark];
     return [self dm_imageWithImageLight:lightImage dark:darkImage];
 }

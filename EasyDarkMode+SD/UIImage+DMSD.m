@@ -9,6 +9,7 @@
 #import "UIImage+DMSD.h"
 #import <SDWebImage/SDWebImage.h>
 #import "UIImage+DM.h"
+
 @implementation UIImage (DMSD)
 
 + (void)dmsd_imageWithPathStringLight:(NSString *)light dark:(NSString *)dark completion:(void (^)(UIImage * _Nullable, NSError * _Nullable))completion {
@@ -38,7 +39,7 @@
             completion(image, nil);
             return;
         }
-        NSError *noImageError = [NSError errorWithDomain:@"com.EasyInterface.download" code:0 userInfo:@{
+        NSError *noImageError = [NSError errorWithDomain:@"com.EasyInterface.SDWebImage" code:0 userInfo:@{
                                                                                           @"message": @"Download is success but we find no image available."
                                                                                           }];
         completion(nil, noImageError);
@@ -47,7 +48,7 @@
     [manager loadImageWithURL:light options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
         lightImage = image;
         if (!theError) {
-            theError = error;
+            error = theError;
         }
         lightFinish = true;
         finishBlock();
@@ -55,7 +56,7 @@
     [manager loadImageWithURL:dark options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
         darkImage = image;
         if (!theError) {
-            theError = error;
+            error = theError;
         }
         darkFinish = true;
         finishBlock();

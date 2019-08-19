@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "EasyDarkMode"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "This is a tool for developers to easily adapt dark mode in iOS 13."
 
   s.description  = <<-DESC
@@ -38,6 +38,18 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |ss|
     ss.source_files  = "EasyDarkMode"
+  end
+  
+  s.subspec 'Swift' do |ss|
+    ss.source_files = "EasyDarkMode+Swift", "EasyDarkMode+SD+Swift"
+    ss.dependency = 'EasyDarkMode/Core'
+  end
+  
+  s.subspec 'Kingfisher' do |ss|
+    ss.source_files = "EasyDarkMode+KF"
+    ss.dependency 'EasyDarkMode/Swift'
+    ss.dependency 'EasyDarkMode/Core'
+    ss.dependency 'Kingfiser'
   end
 
   s.subspec 'SDWebImage' do |ss|

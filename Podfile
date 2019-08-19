@@ -9,4 +9,5 @@ end
 target 'EasyDarkMode' do
   use_frameworks!
   pod 'SDWebImage'
+  pod 'Kingfisher' 
 end
