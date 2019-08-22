@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "EasyDarkMode"
-  s.version      = "2.0.0"
+  s.version      = "2.0.2"
   s.summary      = "This is a tool for developers to easily adapt dark mode in iOS 13."
 
   s.description  = <<-DESC
