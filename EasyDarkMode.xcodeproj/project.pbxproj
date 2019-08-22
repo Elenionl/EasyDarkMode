@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2E7861230D76440037D7D4 /* DMDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E785F230D76440037D7D4 /* DMDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C2E7862230D76440037D7D4 /* DMDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E7860230D76440037D7D4 /* DMDownloadManager.m */; };
+		2C2E7865230D7D660037D7D4 /* UIButton+DMRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E7863230D7D660037D7D4 /* UIButton+DMRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C2E7866230D7D660037D7D4 /* UIButton+DMRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E7864230D7D660037D7D4 /* UIButton+DMRemote.m */; };
+		2C2E7869230D82790037D7D4 /* UIImageView+DMRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E7867230D82790037D7D4 /* UIImageView+DMRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C2E786A230D82790037D7D4 /* UIImageView+DMRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E7868230D82790037D7D4 /* UIImageView+DMRemote.m */; };
+		2C2E786D230D841F0037D7D4 /* EasyDarkMode+Remote.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E786B230D841F0037D7D4 /* EasyDarkMode+Remote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C2E7871230D85C70037D7D4 /* EasyDarkMode+SD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E786F230D85C70037D7D4 /* EasyDarkMode+SD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C2E7872230D85C70037D7D4 /* EasyDarkMode+SD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E7870230D85C70037D7D4 /* EasyDarkMode+SD.m */; };
+		2C2E7878230D87550037D7D4 /* EasyDarkMode+KF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E7877230D87550037D7D4 /* EasyDarkMode+KF.swift */; };
+		2C4A2CF7230EB9730002A8B6 /* InterfaceAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A2CF6230EB9730002A8B6 /* InterfaceAdaptor.swift */; };
+		2C4A2CF9230EBCCB0002A8B6 /* UIColor+DM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A2CF8230EBCCB0002A8B6 /* UIColor+DM.swift */; };
+		2C4A2CFB230EC0160002A8B6 /* UIImage+DM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A2CFA230EC0160002A8B6 /* UIImage+DM.swift */; };
+		2C4A2CFE230EC0D70002A8B6 /* UIImage+DMRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A2CFD230EC0D70002A8B6 /* UIImage+DMRemote.swift */; };
+		2C4A2D00230EC2870002A8B6 /* UIButton+DMRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A2CFF230EC2870002A8B6 /* UIButton+DMRemote.swift */; };
+		2C4A2D02230EC4710002A8B6 /* UIImageVIew+DMRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A2D01230EC4710002A8B6 /* UIImageVIew+DMRemote.swift */; };
 		2C4B472F2309A17A000F18D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C4B472E2309A17A000F18D0 /* README.md */; };
 		2C4B47312309A489000F18D0 /* EasyDarkMode.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2C4B47302309A489000F18D0 /* EasyDarkMode.podspec */; };
 		2C58BBD62309C6BF00F62BD0 /* EasyDarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C899E3523007E3000BBED4F /* EasyDarkMode.framework */; };
 		2C58BBD72309C6BF00F62BD0 /* EasyDarkMode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C899E3523007E3000BBED4F /* EasyDarkMode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2C58BBDD230B041400F62BD0 /* AppearanceCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBDC230B041400F62BD0 /* AppearanceCompatible.swift */; };
-		2C58BBDF230B054400F62BD0 /* UIImage+DMKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBDE230B054400F62BD0 /* UIImage+DMKF.swift */; };
-		2C58BBE1230B066200F62BD0 /* KingfisherAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBE0230B066200F62BD0 /* KingfisherAdaptor.swift */; };
-		2C58BBE3230B0EE200F62BD0 /* UIImageView+DMKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBE2230B0EE200F62BD0 /* UIImageView+DMKF.swift */; };
-		2C58BBE5230B115300F62BD0 /* UIButton+DMKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBE4230B115300F62BD0 /* UIButton+DMKF.swift */; };
-		2C58BBE8230B13B200F62BD0 /* UIColor+DM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBE7230B13B200F62BD0 /* UIColor+DM.swift */; };
-		2C58BBEA230B15D200F62BD0 /* UIImage+DM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBE9230B15D200F62BD0 /* UIImage+DM.swift */; };
-		2C58BBED230B167F00F62BD0 /* SDWebImageAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBEC230B167F00F62BD0 /* SDWebImageAdaptor.swift */; };
-		2C58BBEF230B170E00F62BD0 /* UIImage+DMSD+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBEE230B170E00F62BD0 /* UIImage+DMSD+Swift.swift */; };
-		2C58BBF1230B186700F62BD0 /* UIImageView+DMSD+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBF0230B186700F62BD0 /* UIImageView+DMSD+Swift.swift */; };
-		2C58BBF3230B195E00F62BD0 /* UIButton+DMSD+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58BBF2230B195E00F62BD0 /* UIButton+DMSD+Swift.swift */; };
 		2C899E3A23007E3000BBED4F /* EasyDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E3823007E3000BBED4F /* EasyDarkMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C899E4723007E3C00BBED4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E4623007E3C00BBED4F /* AppDelegate.swift */; };
 		2C899E4923007E3C00BBED4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E4823007E3C00BBED4F /* SceneDelegate.swift */; };
@@ -33,13 +38,8 @@
 		2C899E6023007ED700BBED4F /* UIColor+DM.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E5A23007ED600BBED4F /* UIColor+DM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C899E6223007ED700BBED4F /* UIImage+DM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E5C23007ED600BBED4F /* UIImage+DM.m */; };
 		2C899E6323007ED700BBED4F /* UIImage+DM.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E5D23007ED700BBED4F /* UIImage+DM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C899E7223007F2200BBED4F /* UIImage+DMSD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E6623007F2000BBED4F /* UIImage+DMSD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C899E7723007F2200BBED4F /* UIImage+DMSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E6B23007F2100BBED4F /* UIImage+DMSD.m */; };
-		2C899E7823007F2200BBED4F /* UIImageView+DMSD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E6C23007F2100BBED4F /* UIImageView+DMSD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C899E7923007F2200BBED4F /* UIButton+DMSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E6D23007F2100BBED4F /* UIButton+DMSD.m */; };
-		2C899E7A23007F2200BBED4F /* UIButton+DMSD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E6E23007F2100BBED4F /* UIButton+DMSD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C899E7C23007F2200BBED4F /* UIImageView+DMSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899E7023007F2200BBED4F /* UIImageView+DMSD.m */; };
-		2C899E7F23007F3700BBED4F /* EasyDarkMode+SD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C899E7D23007F3700BBED4F /* EasyDarkMode+SD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CDAD937230D6E3500D97343 /* UIImage+DMRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDAD935230D6E3500D97343 /* UIImage+DMRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CDAD938230D6E3500D97343 /* UIImage+DMRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAD936230D6E3500D97343 /* UIImage+DMRemote.m */; };
 		739C0A4AF03ED821D8C02880 /* Pods_EasyDarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CD434965FAB4FCDBFB6ED4 /* Pods_EasyDarkMode.framework */; };
 		D84A520585A6D061254BD38E /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9561418EFE6969221FE652 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
@@ -71,19 +71,24 @@
 /* Begin PBXFileReference section */
 		0578FCE7A3B07E6522453D2B /* Pods-EasyDarkMode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDarkMode.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyDarkMode/Pods-EasyDarkMode.release.xcconfig"; sourceTree = "<group>"; };
 		0715CBAAEAF2EB1B403DA112 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		2C2E785F230D76440037D7D4 /* DMDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMDownloadManager.h; sourceTree = "<group>"; };
+		2C2E7860230D76440037D7D4 /* DMDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMDownloadManager.m; sourceTree = "<group>"; };
+		2C2E7863230D7D660037D7D4 /* UIButton+DMRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DMRemote.h"; sourceTree = "<group>"; };
+		2C2E7864230D7D660037D7D4 /* UIButton+DMRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DMRemote.m"; sourceTree = "<group>"; };
+		2C2E7867230D82790037D7D4 /* UIImageView+DMRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DMRemote.h"; sourceTree = "<group>"; };
+		2C2E7868230D82790037D7D4 /* UIImageView+DMRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DMRemote.m"; sourceTree = "<group>"; };
+		2C2E786B230D841F0037D7D4 /* EasyDarkMode+Remote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyDarkMode+Remote.h"; sourceTree = "<group>"; };
+		2C2E786F230D85C70037D7D4 /* EasyDarkMode+SD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyDarkMode+SD.h"; sourceTree = "<group>"; };
+		2C2E7870230D85C70037D7D4 /* EasyDarkMode+SD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EasyDarkMode+SD.m"; sourceTree = "<group>"; };
+		2C2E7877230D87550037D7D4 /* EasyDarkMode+KF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EasyDarkMode+KF.swift"; sourceTree = "<group>"; };
+		2C4A2CF6230EB9730002A8B6 /* InterfaceAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceAdaptor.swift; sourceTree = "<group>"; };
+		2C4A2CF8230EBCCB0002A8B6 /* UIColor+DM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DM.swift"; sourceTree = "<group>"; };
+		2C4A2CFA230EC0160002A8B6 /* UIImage+DM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DM.swift"; sourceTree = "<group>"; };
+		2C4A2CFD230EC0D70002A8B6 /* UIImage+DMRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DMRemote.swift"; sourceTree = "<group>"; };
+		2C4A2CFF230EC2870002A8B6 /* UIButton+DMRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+DMRemote.swift"; sourceTree = "<group>"; };
+		2C4A2D01230EC4710002A8B6 /* UIImageVIew+DMRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageVIew+DMRemote.swift"; sourceTree = "<group>"; };
 		2C4B472E2309A17A000F18D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2C4B47302309A489000F18D0 /* EasyDarkMode.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EasyDarkMode.podspec; sourceTree = "<group>"; };
-		2C58BBDC230B041400F62BD0 /* AppearanceCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceCompatible.swift; sourceTree = "<group>"; };
-		2C58BBDE230B054400F62BD0 /* UIImage+DMKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DMKF.swift"; sourceTree = "<group>"; };
-		2C58BBE0230B066200F62BD0 /* KingfisherAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherAdaptor.swift; sourceTree = "<group>"; };
-		2C58BBE2230B0EE200F62BD0 /* UIImageView+DMKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DMKF.swift"; sourceTree = "<group>"; };
-		2C58BBE4230B115300F62BD0 /* UIButton+DMKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+DMKF.swift"; sourceTree = "<group>"; };
-		2C58BBE7230B13B200F62BD0 /* UIColor+DM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DM.swift"; sourceTree = "<group>"; };
-		2C58BBE9230B15D200F62BD0 /* UIImage+DM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DM.swift"; sourceTree = "<group>"; };
-		2C58BBEC230B167F00F62BD0 /* SDWebImageAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageAdaptor.swift; sourceTree = "<group>"; };
-		2C58BBEE230B170E00F62BD0 /* UIImage+DMSD+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DMSD+Swift.swift"; sourceTree = "<group>"; };
-		2C58BBF0230B186700F62BD0 /* UIImageView+DMSD+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DMSD+Swift.swift"; sourceTree = "<group>"; };
-		2C58BBF2230B195E00F62BD0 /* UIButton+DMSD+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+DMSD+Swift.swift"; sourceTree = "<group>"; };
+		2C4B47302309A489000F18D0 /* EasyDarkMode.podspec */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text; path = EasyDarkMode.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		2C899E3523007E3000BBED4F /* EasyDarkMode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyDarkMode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C899E3823007E3000BBED4F /* EasyDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyDarkMode.h; sourceTree = "<group>"; };
 		2C899E3923007E3000BBED4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +104,8 @@
 		2C899E5A23007ED600BBED4F /* UIColor+DM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DM.h"; sourceTree = "<group>"; };
 		2C899E5C23007ED600BBED4F /* UIImage+DM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DM.m"; sourceTree = "<group>"; };
 		2C899E5D23007ED700BBED4F /* UIImage+DM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DM.h"; sourceTree = "<group>"; };
-		2C899E6623007F2000BBED4F /* UIImage+DMSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DMSD.h"; sourceTree = "<group>"; };
-		2C899E6B23007F2100BBED4F /* UIImage+DMSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DMSD.m"; sourceTree = "<group>"; };
-		2C899E6C23007F2100BBED4F /* UIImageView+DMSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DMSD.h"; sourceTree = "<group>"; };
-		2C899E6D23007F2100BBED4F /* UIButton+DMSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DMSD.m"; sourceTree = "<group>"; };
-		2C899E6E23007F2100BBED4F /* UIButton+DMSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DMSD.h"; sourceTree = "<group>"; };
-		2C899E7023007F2200BBED4F /* UIImageView+DMSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DMSD.m"; sourceTree = "<group>"; };
-		2C899E7D23007F3700BBED4F /* EasyDarkMode+SD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyDarkMode+SD.h"; sourceTree = "<group>"; };
+		2CDAD935230D6E3500D97343 /* UIImage+DMRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DMRemote.h"; sourceTree = "<group>"; };
+		2CDAD936230D6E3500D97343 /* UIImage+DMRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DMRemote.m"; sourceTree = "<group>"; };
 		3A9561418EFE6969221FE652 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BAAB0DD22DF4C64D440AA1 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		74CBA4EBC75FA8436E753320 /* Pods-EasyDarkMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDarkMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyDarkMode/Pods-EasyDarkMode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,47 +133,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C58BBDB230B037000F62BD0 /* EasyDarkMode+KF */ = {
+		2C4A2CF5230EB8F70002A8B6 /* EasyDarkMode+Swift */ = {
 			isa = PBXGroup;
 			children = (
-				2C58BBE0230B066200F62BD0 /* KingfisherAdaptor.swift */,
-				2C58BBDE230B054400F62BD0 /* UIImage+DMKF.swift */,
-				2C58BBE2230B0EE200F62BD0 /* UIImageView+DMKF.swift */,
-				2C58BBE4230B115300F62BD0 /* UIButton+DMKF.swift */,
-			);
-			path = "EasyDarkMode+KF";
-			sourceTree = "<group>";
-		};
-		2C58BBE6230B134200F62BD0 /* EasyDarkMode+Swift */ = {
-			isa = PBXGroup;
-			children = (
-				2C58BBDC230B041400F62BD0 /* AppearanceCompatible.swift */,
-				2C58BBE7230B13B200F62BD0 /* UIColor+DM.swift */,
-				2C58BBE9230B15D200F62BD0 /* UIImage+DM.swift */,
+				2C4A2CF6230EB9730002A8B6 /* InterfaceAdaptor.swift */,
+				2C4A2CF8230EBCCB0002A8B6 /* UIColor+DM.swift */,
+				2C4A2CFA230EC0160002A8B6 /* UIImage+DM.swift */,
 			);
 			path = "EasyDarkMode+Swift";
 			sourceTree = "<group>";
 		};
-		2C58BBEB230B165000F62BD0 /* EasyDarkMode+SD+Swift */ = {
+		2C4A2CFC230EC0AC0002A8B6 /* EasyDarkMode+Remote+Swift */ = {
 			isa = PBXGroup;
 			children = (
-				2C58BBEC230B167F00F62BD0 /* SDWebImageAdaptor.swift */,
-				2C58BBEE230B170E00F62BD0 /* UIImage+DMSD+Swift.swift */,
-				2C58BBF0230B186700F62BD0 /* UIImageView+DMSD+Swift.swift */,
-				2C58BBF2230B195E00F62BD0 /* UIButton+DMSD+Swift.swift */,
+				2C4A2CFD230EC0D70002A8B6 /* UIImage+DMRemote.swift */,
+				2C4A2CFF230EC2870002A8B6 /* UIButton+DMRemote.swift */,
+				2C4A2D01230EC4710002A8B6 /* UIImageVIew+DMRemote.swift */,
 			);
-			path = "EasyDarkMode+SD+Swift";
+			path = "EasyDarkMode+Remote+Swift";
+			sourceTree = "<group>";
+		};
+		2C58BBDB230B037000F62BD0 /* EasyDarkMode+KF */ = {
+			isa = PBXGroup;
+			children = (
+				2C2E7877230D87550037D7D4 /* EasyDarkMode+KF.swift */,
+			);
+			path = "EasyDarkMode+KF";
 			sourceTree = "<group>";
 		};
 		2C899E2B23007E3000BBED4F = {
 			isa = PBXGroup;
 			children = (
-				2C58BBEB230B165000F62BD0 /* EasyDarkMode+SD+Swift */,
-				2C58BBE6230B134200F62BD0 /* EasyDarkMode+Swift */,
-				2C58BBDB230B037000F62BD0 /* EasyDarkMode+KF */,
 				2C4B47302309A489000F18D0 /* EasyDarkMode.podspec */,
 				2C4B472E2309A17A000F18D0 /* README.md */,
+				2C4A2CFC230EC0AC0002A8B6 /* EasyDarkMode+Remote+Swift */,
+				2C4A2CF5230EB8F70002A8B6 /* EasyDarkMode+Swift */,
 				2C899E5823007E4C00BBED4F /* EasyDarkMode+SD */,
+				2C58BBDB230B037000F62BD0 /* EasyDarkMode+KF */,
+				2CDAD934230D6E0500D97343 /* EasyDarkMode+Remote */,
 				2C899E3723007E3000BBED4F /* EasyDarkMode */,
 				2C899E4523007E3C00BBED4F /* Demo */,
 				2C899E3623007E3000BBED4F /* Products */,
@@ -221,15 +218,26 @@
 		2C899E5823007E4C00BBED4F /* EasyDarkMode+SD */ = {
 			isa = PBXGroup;
 			children = (
-				2C899E7D23007F3700BBED4F /* EasyDarkMode+SD.h */,
-				2C899E6E23007F2100BBED4F /* UIButton+DMSD.h */,
-				2C899E6D23007F2100BBED4F /* UIButton+DMSD.m */,
-				2C899E6623007F2000BBED4F /* UIImage+DMSD.h */,
-				2C899E6B23007F2100BBED4F /* UIImage+DMSD.m */,
-				2C899E6C23007F2100BBED4F /* UIImageView+DMSD.h */,
-				2C899E7023007F2200BBED4F /* UIImageView+DMSD.m */,
+				2C2E786F230D85C70037D7D4 /* EasyDarkMode+SD.h */,
+				2C2E7870230D85C70037D7D4 /* EasyDarkMode+SD.m */,
 			);
 			path = "EasyDarkMode+SD";
+			sourceTree = "<group>";
+		};
+		2CDAD934230D6E0500D97343 /* EasyDarkMode+Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2C2E786B230D841F0037D7D4 /* EasyDarkMode+Remote.h */,
+				2CDAD935230D6E3500D97343 /* UIImage+DMRemote.h */,
+				2CDAD936230D6E3500D97343 /* UIImage+DMRemote.m */,
+				2C2E7863230D7D660037D7D4 /* UIButton+DMRemote.h */,
+				2C2E7864230D7D660037D7D4 /* UIButton+DMRemote.m */,
+				2C2E7867230D82790037D7D4 /* UIImageView+DMRemote.h */,
+				2C2E7868230D82790037D7D4 /* UIImageView+DMRemote.m */,
+				2C2E785F230D76440037D7D4 /* DMDownloadManager.h */,
+				2C2E7860230D76440037D7D4 /* DMDownloadManager.m */,
+			);
+			path = "EasyDarkMode+Remote";
 			sourceTree = "<group>";
 		};
 		3BFCB0C7441CA0EB026F36ED /* Pods */ = {
@@ -260,12 +268,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C899E6323007ED700BBED4F /* UIImage+DM.h in Headers */,
+				2C2E786D230D841F0037D7D4 /* EasyDarkMode+Remote.h in Headers */,
+				2C2E7871230D85C70037D7D4 /* EasyDarkMode+SD.h in Headers */,
+				2C2E7865230D7D660037D7D4 /* UIButton+DMRemote.h in Headers */,
+				2CDAD937230D6E3500D97343 /* UIImage+DMRemote.h in Headers */,
+				2C2E7861230D76440037D7D4 /* DMDownloadManager.h in Headers */,
 				2C899E6023007ED700BBED4F /* UIColor+DM.h in Headers */,
-				2C899E7223007F2200BBED4F /* UIImage+DMSD.h in Headers */,
-				2C899E7A23007F2200BBED4F /* UIButton+DMSD.h in Headers */,
-				2C899E7823007F2200BBED4F /* UIImageView+DMSD.h in Headers */,
 				2C899E3A23007E3000BBED4F /* EasyDarkMode.h in Headers */,
-				2C899E7F23007F3700BBED4F /* EasyDarkMode+SD.h in Headers */,
+				2C2E7869230D82790037D7D4 /* UIImageView+DMRemote.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,22 +451,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C58BBEA230B15D200F62BD0 /* UIImage+DM.swift in Sources */,
-				2C58BBF1230B186700F62BD0 /* UIImageView+DMSD+Swift.swift in Sources */,
+				2C4A2D00230EC2870002A8B6 /* UIButton+DMRemote.swift in Sources */,
 				2C899E5F23007ED700BBED4F /* UIColor+DM.m in Sources */,
-				2C58BBDF230B054400F62BD0 /* UIImage+DMKF.swift in Sources */,
-				2C58BBED230B167F00F62BD0 /* SDWebImageAdaptor.swift in Sources */,
-				2C899E7723007F2200BBED4F /* UIImage+DMSD.m in Sources */,
-				2C58BBE5230B115300F62BD0 /* UIButton+DMKF.swift in Sources */,
+				2CDAD938230D6E3500D97343 /* UIImage+DMRemote.m in Sources */,
+				2C4A2CFB230EC0160002A8B6 /* UIImage+DM.swift in Sources */,
+				2C2E7872230D85C70037D7D4 /* EasyDarkMode+SD.m in Sources */,
+				2C4A2CF7230EB9730002A8B6 /* InterfaceAdaptor.swift in Sources */,
+				2C2E7862230D76440037D7D4 /* DMDownloadManager.m in Sources */,
+				2C4A2D02230EC4710002A8B6 /* UIImageVIew+DMRemote.swift in Sources */,
+				2C4A2CFE230EC0D70002A8B6 /* UIImage+DMRemote.swift in Sources */,
 				2C899E6223007ED700BBED4F /* UIImage+DM.m in Sources */,
-				2C58BBDD230B041400F62BD0 /* AppearanceCompatible.swift in Sources */,
-				2C58BBF3230B195E00F62BD0 /* UIButton+DMSD+Swift.swift in Sources */,
-				2C58BBE8230B13B200F62BD0 /* UIColor+DM.swift in Sources */,
-				2C899E7C23007F2200BBED4F /* UIImageView+DMSD.m in Sources */,
-				2C899E7923007F2200BBED4F /* UIButton+DMSD.m in Sources */,
-				2C58BBE1230B066200F62BD0 /* KingfisherAdaptor.swift in Sources */,
-				2C58BBE3230B0EE200F62BD0 /* UIImageView+DMKF.swift in Sources */,
-				2C58BBEF230B170E00F62BD0 /* UIImage+DMSD+Swift.swift in Sources */,
+				2C2E7866230D7D660037D7D4 /* UIButton+DMRemote.m in Sources */,
+				2C2E786A230D82790037D7D4 /* UIImageView+DMRemote.m in Sources */,
+				2C2E7878230D87550037D7D4 /* EasyDarkMode+KF.swift in Sources */,
+				2C4A2CF9230EBCCB0002A8B6 /* UIColor+DM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +636,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EasyDarkMode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +646,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elenion.dev.EasyDarkMode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,6 +665,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EasyDarkMode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,6 +675,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elenion.dev.EasyDarkMode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -673,7 +685,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0715CBAAEAF2EB1B403DA112 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Demo/Info.plist;
@@ -702,7 +714,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60BAAB0DD22DF4C64D440AA1 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Demo/Info.plist;

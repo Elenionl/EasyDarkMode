@@ -14,6 +14,11 @@ import EasyDarkMode
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
+        DMDownloadManager.shared.connectWithKingfisher()
+//        DMDownloadManager.shared.connectWithSdWebImage()
+        DMDownloadManager.shared.downloader = { (url, completion) in
+            // ...
+        }
         super.viewDidLoad()
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
@@ -131,7 +136,7 @@ class ViewController: UIViewController {
     
     lazy var easyDarkModeImage: UIImageView = {
         let item = UIImageView()
-        item.image = UIImage.dm_image(withNameLight: "check_light", dark: "check_dark")
+        item.image = UIImage.dm.image(name: "check_light", dark: "check_dark")
         return item
     }()
     
@@ -144,15 +149,15 @@ class ViewController: UIViewController {
     
     lazy var easyDarkModeColor: UILabel = {
         let item = UILabel()
-        item.backgroundColor = UIColor.dm_color(withColorLight: UIColor.black, dark: UIColor.white)
+        item.backgroundColor = UIColor.dm.color(color: UIColor.black, dark: UIColor.white)
         item.text = "This label's color can change with trait."
-        item.textColor = UIColor.dm_color(withColorLight: UIColor.white, dark: UIColor.black)
+        item.textColor = UIColor.dm.color(color: UIColor.white, dark: UIColor.black)
         return item
     }()
     
     lazy var divider: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.dm_color(withColorLight: UIColor.gray, dark: UIColor.lightGray)
+        view.backgroundColor = UIColor.dm.color(color: UIColor.gray, dark: UIColor.gray)
         return view
     }()
     
@@ -165,8 +170,13 @@ class ViewController: UIViewController {
     
     lazy var easySdImage: UIView = {
         let item = UIImageView()
-        UIImage.dmsd_image(withPathStringLight: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg") { (image, error) in
-            item.image = image
+        UIImage.dm.image(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg") { (result) in
+            switch result {
+            case .success(let image):
+                item.image = image
+            default:
+                break
+            }
         }
         return item
     }()
@@ -180,7 +190,7 @@ class ViewController: UIViewController {
     
     lazy var easySdImageView: UIView = {
         let item = UIImageView()
-        item.dmsd_setImageStringLight("http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg")
+        item.dm.setImage(stringPath: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg")
         return item
     }()
     
@@ -193,7 +203,7 @@ class ViewController: UIViewController {
     
     lazy var easySdImageButton: UIView = {
         let item = UIButton()
-        item.dmsd_setBackgroundStringLight("http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
+        item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
         return item
     }()
 }

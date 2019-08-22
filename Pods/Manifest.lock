@@ -3,7 +3,7 @@ PODS:
   - SDWebImage (5.1.0):
     - SDWebImage/Core (= 5.1.0)
   - SDWebImage/Core (5.1.0)
-  - SnapKit (5.0.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Kingfisher
@@ -19,7 +19,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
-  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: c14eeb4f5cd0ce0bce18483650f7c92158e6735b
 

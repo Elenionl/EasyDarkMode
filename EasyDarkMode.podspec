@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint EasyDarkMode.podspec' to ensure this is a
+#  Be sure to run `pod spec lint EasyDarkMode.podspec" to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "EasyDarkMode"
-  s.version      = "1.0.1"
+  s.version      = "2.0.0"
   s.summary      = "This is a tool for developers to easily adapt dark mode in iOS 13."
 
   s.description  = <<-DESC
@@ -36,28 +36,42 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Elenionl/EasyDarkMode.git", :tag => "#{s.version}" }
 
-  s.subspec 'Core' do |ss|
+  s.subspec "Core" do |ss|
     ss.source_files  = "EasyDarkMode"
   end
   
-  s.subspec 'Swift' do |ss|
-    ss.source_files = "EasyDarkMode+Swift", "EasyDarkMode+SD+Swift"
-    ss.dependency = 'EasyDarkMode/Core'
+  s.subspec "Core-Swift" do |ss|
+    ss.source_files = "EasyDarkMode+Swift"
+    ss.dependency "EasyDarkMode/Core"
+  end
+
+  s.subspec "Remote" do |ss|
+    ss.source_files = "EasyDarkMode+Remote"
+    ss.dependency "EasyDarkMode/Core"
+  end
+
+  s.subspec "Remote-Swift" do |ss|
+    ss.source_files = "EasyDarkMode+Remote+Swift"
+    ss.dependency "EasyDarkMode/Remote"
+    ss.dependency "EasyDarkMode/Core-Swift"
+  end
+
+  s.subspec "SDWebImage" do |ss|
+    ss.source_files = "EasyDarkMode+SD"
+    ss.dependency "EasyDarkMode/Remote"
+    ss.dependency "SDWebImage"
+  end
+
+  s.subspec "SDWebImage-Swift" do |ss|
+    ss.dependency "EasyDarkMode/Remote-Swift"
   end
   
-  s.subspec 'Kingfisher' do |ss|
+  s.subspec "Kingfisher" do |ss|
     ss.source_files = "EasyDarkMode+KF"
-    ss.dependency 'EasyDarkMode/Swift'
-    ss.dependency 'EasyDarkMode/Core'
-    ss.dependency 'Kingfiser'
+    ss.dependency "EasyDarkMode/Remote-Swift"
+    ss.dependency "Kingfiser"
   end
 
-  s.subspec 'SDWebImage' do |ss|
-    ss.source_files = "EasyDarkMode+SD"
-    ss.dependency 'EasyDarkMode/Core'
-    ss.dependency 'SDWebImage'
-  end
-
-  s.default_subspec = 'Core'
+  s.default_subspec = "Core"
 
 end

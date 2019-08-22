@@ -1,5 +1,5 @@
 //
-//  EasyDarkMode+SD.h
+//  EasyDarkMod+Remote.h
 //  EasyDarkMode
 //
 //  Created by Elenion on 2019/8/21.
@@ -7,14 +7,7 @@
 //
 
 #import <EasyDarkMode/DMDownloadManager.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface DMDownloadManager (SD)
-
-- (void)connectWithSdWebImage;
-
-@end
-
-
-NS_ASSUME_NONNULL_END
+#import <EasyDarkMode/UIImage+DMRemote.h>
+#import <EasyDarkMode/UIButton+DMRemote.h>
+#import <EasyDarkMode/UIImageView+DMRemote.h>
+ 

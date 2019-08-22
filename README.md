@@ -6,9 +6,66 @@
 
 ## Introduction
 
-This is a tool for developers to easily adapt dark mode in iOS 13.
+iOS 13 introduces two kinds of user interface types, light and dark.
+
+This is a tool for developers to easily adapt interface feature in iOS 13.
 
 [中文版本](https://zhuanlan.zhihu.com/p/78728387)
+
+
+## Quick start
+
+* Using only local images and colors:
+
+``` Ruby
+pod 'EasyDarkMode'
+```
+
+``` Swift
+import EasyDarkMode
+
+view.backgroundColor = UIColor.dm.color(color: , dark: UIColor.white)
+imageView.image = UIImage.dm.image(name: "check_light", dark: "check_dark")
+```
+
+``` Objective-C
+#import <EasyDarkMode/EasyDarkMode.h>
+
+view.backgroundColor = [UIColor dm_colorWithColorLight:UIColor.grayColor dark:UIColor.whiteColor];
+imageView.image = [UIImage dm_imageWithNameLight:@"check_light" dark:@""check_dark""];
+```
+
+* Using local images and colors along with remote images downloaded by SDWebimage:
+
+``` Ruby
+pod 'EasyDarkMode/SDWebImage'
+```
+
+``` Swift
+import EasyDarkMode
+DMDownloadManager.shared.connectWithSdWebImage()
+item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
+```
+
+``` Objective-C
+#import <EasyDarkMode/EasyDrakMode.h>
+[DMDownloadManager.shared connectWithSdWebImage];
+[button dm_setImagePathStringLight:@"http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg" dark:@"http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg" forState:UIControlStateNnormal];
+```
+
+* Using local images and colors along with remote images downloaded by Kingfiser:
+
+``` Ruby
+pod 'EasyDarkMode/Kingfisher'
+```
+
+``` Swift
+import EasyDarkMode
+DMDownloadManager.shared.connectWithKingfisher()
+item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
+```
+
+## Samples
 
 ![video](https://raw.githubusercontent.com/Elenionl/EasyDarkMode/master/Sample/demo.mov?token=AD5OKW6SDH6NR7ZNXDIYRDK5MKS7U)
 
@@ -18,35 +75,73 @@ This is a tool for developers to easily adapt dark mode in iOS 13.
 
 ## Features
 
-* Shortcut method to create UIColor with different user interface type (dark mode).
+* Shortcut method to create UIColor with different user interface type.
 
-* Shortcut method to create UIImage with different user interface type (dark mode).
+* Shortcut method to create UIImage with different user interface type.
 
-* Shortcut method to download remoate image with SDWebImage and create UIImage with different user interface type (dark mode).
+* Written in Objective-C. All functions available in Swift with modern APIs.
+
+* Shortcut method to download remoate image with SDWebImage and Kingfisher and create UIImage with different user interface type.
 
 * This code can work on from Xcode 9 to Xcode 11.
 
 * It has an various deployment target version from iOS 8 to iOS 13.
 
-## How to install
+## Custom Guide
 
-### Using `CocoaPods`
-
-* If you want to create local image and color with different user interface type. Just write as bellow in podfile.
+### Using only `local images`. Using `Objective-C`
 
 ``` Ruby
 pod 'EasyDarkMode'
 ```
 
-* If you want additional functions to create image object with remote images by using SDWebImage. Try this pod:
+or
+
+``` Ruby
+pod 'EasyDarkMode/Core'
+```
+
+### Using only `local images`. In `Swift`
+
+``` Ruby
+pod 'EasyDarkMode/Core-Swift'
+```
+
+### Using both `local images` and `remote images`. I prefer to download with `SDWebImage`. Using `Objective-C`
 
 ``` Ruby
 pod 'EasyDarkMode/SDWebImage'
 ```
 
-## How to use
+### Using both `local images` and `remote images`. I prefer to download with `SDWebImage`. Using `Swift`
+
+``` Ruby
+pod 'EasyDarkMode/SDWebImage+Swift'
+```
+
+### Using both `local images` and `remote images`. I prefer to download with `Kingfisher`. Using `Swift`
+
+``` Ruby
+pod 'EasyDarkMode/Kingfisher'
+```
+
+### Using both `local images` and `remote images`. I prefer to offer download function `by myself`. Using `Objective-C`
+
+``` Ruby
+pod 'EasyDarkMode/Remote'
+```
+
+### Using both `local images` and `remote images`. I prefer to offer download function `by myself`. Using `Swift`
+
+``` Ruby
+pod 'EasyDarkMode/Swift'
+```
+
+## APIs
 
 ### Create static color
+
+* Available in `EasyDarkMode/Core`
 
 ``` ObjC
 @interface UIColor (DM)
@@ -56,7 +151,9 @@ pod 'EasyDarkMode/SDWebImage'
 @end
 ```
 
-### Create image with local light and dark image
+#### Create image with local light and dark image
+
+* Available in `EasyDarkMode/Core`
 
 ``` ObjC
 @interface UIImage (DM)
@@ -68,9 +165,41 @@ pod 'EasyDarkMode/SDWebImage'
 @end
 ```
 
-### Create image object with remote images
+### Create UIImage object with remote images
 
-❗️**These methods are only available in EasyDarkMode/SDWebImage**. If you cannot find these methods, try `pod 'EasyDarkMode/SDWebImage'`
+* Available in `EasyDarkMode/Remote`
+
+#### Register downloader
+
+***Very Important*** If your are using `EasyDarkMode/SDWebImage`, `EasyDarkMode/Kingfisher` o `EasyDarkMode/Remote`, it is very important that you should register a downloader before you call functions.
+
+* If you are using `EasyDarkMode/SDWebImage`, you should call function below at startup of the application.
+
+``` Objc
+[DMDownloadManager.shared connectWithSdWebImage];
+```
+
+or
+
+``` Swift
+DMDownloadManager.shared.connectWithSdWebImage()
+```
+
+* If you are using `EasyDarkMode/Kingfisher`, you should call function below at startup of the application.
+
+``` Swift
+DMDownloadManager.shared.connectWithKingfisher()
+```
+
+* If you are using `EasyDarkMode/Remote`, you should call function below at startup of the application.
+
+``` Swift
+DMDownloadManager.shared.downloader = { (url, completion) in
+  // ...
+}
+```
+
+#### Functions
 
 ``` Objc
 @interface UIImage (DMSD)
@@ -81,8 +210,6 @@ pod 'EasyDarkMode/SDWebImage'
 
 @end
 ```
-
-There are functins similar with SDWebImage
 
 ``` ObjC
 
@@ -114,8 +241,8 @@ There are functins similar with SDWebImage
 
 🥐 Support SDWebImage
 
-🍩 Find a way to support NSTextAttachment in NSAttributedString.
+🍩 Support KingFisher.
 
-   Find a way to support web image for NSTextAttachment.
+Find a way to support NSTextAttachment in NSAttributedString.
 
-   Support KingFisher.
+Find a way to support web image for NSTextAttachment.

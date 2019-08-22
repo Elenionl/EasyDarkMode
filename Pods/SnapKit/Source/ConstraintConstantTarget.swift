@@ -82,11 +82,7 @@ extension ConstraintConstantTarget {
                     return value.y
                 case .width, .height, .notAnAttribute:
                     return 0.0
-                #if swift(>=5.0)
-                @unknown default:
-                    return 0.0
-                #endif
-            }
+                }
             #else
                 switch layoutAttribute {
                 case .left, .right, .leading, .trailing, .centerX:
@@ -95,73 +91,53 @@ extension ConstraintConstantTarget {
                     return value.y
                 case .width, .height, .notAnAttribute:
                     return 0.0
-                #if swift(>=5.0)
-                @unknown default:
-                    return 0.0
-                #endif
-            }
+                }
             #endif
         }
         
         if let value = self as? ConstraintInsets {
             #if os(iOS) || os(tvOS)
                 switch layoutAttribute {
-                case .left, .leftMargin:
+                case .left, .leftMargin, .centerX, .centerXWithinMargins:
                     return value.left
-                case .top, .topMargin, .firstBaseline:
+                case .top, .topMargin, .centerY, .centerYWithinMargins, .lastBaseline, .firstBaseline:
                     return value.top
                 case .right, .rightMargin:
                     return -value.right
-                case .bottom, .bottomMargin, .lastBaseline:
+                case .bottom, .bottomMargin:
                     return -value.bottom
                 case .leading, .leadingMargin:
                     return (ConstraintConfig.interfaceLayoutDirection == .leftToRight) ? value.left : value.right
                 case .trailing, .trailingMargin:
                     return (ConstraintConfig.interfaceLayoutDirection == .leftToRight) ? -value.right : -value.left
-                case .centerX, .centerXWithinMargins:
-                    return (value.left - value.right) / 2
-                case .centerY, .centerYWithinMargins:
-                    return (value.top - value.bottom) / 2
                 case .width:
                     return -(value.left + value.right)
                 case .height:
                     return -(value.top + value.bottom)
                 case .notAnAttribute:
                     return 0.0
-                #if swift(>=5.0)
-                @unknown default:
-                    return 0.0
-                #endif
-            }
+                }
             #else
                 switch layoutAttribute {
-                case .left:
+                case .left, .centerX:
                     return value.left
-                case .top, .firstBaseline:
+                case .top, .centerY, .lastBaseline, .firstBaseline:
                     return value.top
                 case .right:
                     return -value.right
-                case .bottom, .lastBaseline:
+                case .bottom:
                     return -value.bottom
                 case .leading:
                     return (ConstraintConfig.interfaceLayoutDirection == .leftToRight) ? value.left : value.right
                 case .trailing:
                     return (ConstraintConfig.interfaceLayoutDirection == .leftToRight) ? -value.right : -value.left
-                case .centerX:
-                    return (value.left - value.right) / 2
-                case .centerY:
-                    return (value.top - value.bottom) / 2
                 case .width:
                     return -(value.left + value.right)
                 case .height:
                     return -(value.top + value.bottom)
                 case .notAnAttribute:
                     return 0.0
-                #if swift(>=5.0)
-                @unknown default:
-                    return 0.0
-                #endif
-            }
+                }
             #endif
         }
         
