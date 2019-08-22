@@ -69,7 +69,7 @@ Pod::Spec.new do |s|
   s.subspec "Kingfisher" do |ss|
     ss.source_files = "EasyDarkMode+KF"
     ss.dependency "EasyDarkMode/Remote-Swift"
-    ss.dependency "Kingfiser"
+    ss.dependency "Kingfisher"
   end
 
   s.default_subspec = "Core"
