@@ -18,7 +18,7 @@ This is a tool for developers to easily adapt interface feature in iOS 13.
 
 ## Quick start
 
-* Using only local images and colors:
+### Using only local images and colors:
 
 ``` Ruby
 pod 'EasyDarkMode'
@@ -40,7 +40,7 @@ imageView.image = [UIImage dm_imageWithNameLight:@"check_light" dark:@""check_da
 
 
 
-* Using local images and colors along with remote images downloaded by SDWebimage:
+### Using local images and colors along with remote images downloaded by SDWebimage:
 
 ``` Ruby
 pod 'EasyDarkMode/SDWebImage'
@@ -60,7 +60,7 @@ item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94
 
 
 
-* Using local images and colors along with remote images downloaded by Kingfiser:
+### Using local images and colors along with remote images downloaded by Kingfiser:
 
 ``` Ruby
 pod 'EasyDarkMode/Kingfisher'
@@ -112,7 +112,7 @@ or
 pod 'EasyDarkMode/Core'
 ```
 
-### Using only `local images`. In `Swift`
+### Using only `local images`. Using `Swift`
 
 ``` Ruby
 pod 'EasyDarkMode/Core-Swift'
