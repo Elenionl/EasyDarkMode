@@ -48,12 +48,14 @@ pod 'EasyDarkMode/SDWebImage'
 
 ``` Swift
 import EasyDarkMode
+// You should config downloder once using connectWithSdWebImage function before start to download images.
 DMDownloadManager.shared.connectWithSdWebImage()
 item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
 ```
 
 ``` Objective-C
 #import <EasyDarkMode/EasyDrakMode.h>
+// You should config downloder once using connectWithSdWebImage function before start to download images.
 [DMDownloadManager.shared connectWithSdWebImage];
 [button dm_setImagePathStringLight:@"http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg" dark:@"http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg" forState:UIControlStateNnormal];
 ```
@@ -68,6 +70,7 @@ pod 'EasyDarkMode/Kingfisher'
 
 ``` Swift
 import EasyDarkMode
+// You should config downloder once using connectWithSdWebImage function before start to download images.
 DMDownloadManager.shared.connectWithKingfisher()
 item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
 ```
