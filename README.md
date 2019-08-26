@@ -4,6 +4,8 @@
 ![license](https://img.shields.io/github/license/Elenionl/EasyDarkMode)
 ![platform](https://img.shields.io/cocoapods/p/EasyDarkMode)
 
+
+
 ## Introduction
 
 iOS 13 introduces two kinds of user interface types, light and dark.
@@ -11,6 +13,7 @@ iOS 13 introduces two kinds of user interface types, light and dark.
 This is a tool for developers to easily adapt interface feature in iOS 13.
 
 [中文版本](https://zhuanlan.zhihu.com/p/78728387)
+
 
 
 ## Quick start
@@ -35,6 +38,8 @@ view.backgroundColor = [UIColor dm_colorWithColorLight:UIColor.grayColor dark:UI
 imageView.image = [UIImage dm_imageWithNameLight:@"check_light" dark:@""check_dark""];
 ```
 
+
+
 * Using local images and colors along with remote images downloaded by SDWebimage:
 
 ``` Ruby
@@ -52,6 +57,8 @@ item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94
 [DMDownloadManager.shared connectWithSdWebImage];
 [button dm_setImagePathStringLight:@"http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg" dark:@"http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg" forState:UIControlStateNnormal];
 ```
+
+
 
 * Using local images and colors along with remote images downloaded by Kingfiser:
 
@@ -73,6 +80,8 @@ item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94
 
 ![dark](https://github.com/Elenionl/EasyDarkMode/blob/master/Sample/image_dark.png?raw=true)
 
+
+
 ## Features
 
 * Shortcut method to create UIColor with different user interface type.
@@ -86,6 +95,8 @@ item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94
 * This code can work on from Xcode 9 to Xcode 11.
 
 * It has an various deployment target version from iOS 8 to iOS 13.
+
+
 
 ## Custom Guide
 
@@ -134,8 +145,10 @@ pod 'EasyDarkMode/Remote'
 ### Using both `local images` and `remote images`. I prefer to offer download function `by myself`. Using `Swift`
 
 ``` Ruby
-pod 'EasyDarkMode/Swift'
+pod 'EasyDarkMode/Remote-Swift'
 ```
+
+
 
 ## APIs
 
@@ -234,6 +247,8 @@ DMDownloadManager.shared.downloader = { (url, completion) in
 @end
 
 ```
+
+
 
 ## TODO
 
