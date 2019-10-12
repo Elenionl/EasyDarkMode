@@ -16,7 +16,7 @@
     }
 #if __IPHONE_13_0
     if (@available(iOS 13.0, *)) {
-        UIImage *image = UIImage.new;
+        UIImage *image = light ?: UIImage.new;
         [image.imageAsset registerImage:dark ?: light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark]];
         [image.imageAsset registerImage:light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight]];
         [image.imageAsset registerImage:light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleUnspecified]];
