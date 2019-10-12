@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/Elenionl/EasyDarkMode.git", :tag => "#{s.version}" }
-
+  s.swift_versions = '5.0'
   s.subspec "Core" do |ss|
     ss.source_files  = "EasyDarkMode"
   end
