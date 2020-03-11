@@ -14,12 +14,8 @@ import EasyDarkMode
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
-        DMDownloadManager.shared.connectWithKingfisher()
-//        DMDownloadManager.shared.connectWithSdWebImage()
-//        DMDownloadManager.shared.downloader = { (url, completion) in
-            // ...
-//        }
         super.viewDidLoad()
+        view.backgroundColor = UIColor.dm_color(withColorLight: UIColor.white, dark: UIColor.black)
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()

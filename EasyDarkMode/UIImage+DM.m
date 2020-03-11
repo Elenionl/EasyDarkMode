@@ -16,10 +16,16 @@
     }
 #if __IPHONE_13_0
     if (@available(iOS 13.0, *)) {
-        UIImage *image = light ?: UIImage.new;
-        [image.imageAsset registerImage:dark ?: light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark]];
-        [image.imageAsset registerImage:light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight]];
-        [image.imageAsset registerImage:light withTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleUnspecified]];
+//        UIImage *image = light ?: UIImage.new;
+        UITraitCollection *lightCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
+        UITraitCollection *darkCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
+        UITraitCollection *unspecifiedCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
+        UIImage *image = UIImage.new;
+        UIImage *darkPure = [dark.imageAsset imageWithTraitCollection:unspecifiedCollection];
+        UIImage *lightPure = [light.imageAsset imageWithTraitCollection:unspecifiedCollection];
+        [image.imageAsset registerImage:lightPure withTraitCollection:lightCollection];
+        [image.imageAsset registerImage:darkPure withTraitCollection:darkCollection];
+        [image.imageAsset registerImage:lightPure withTraitCollection:unspecifiedCollection];
         return image;
     } else {
 #endif
