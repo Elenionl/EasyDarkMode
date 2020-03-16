@@ -10,7 +10,7 @@ iOS 13 introduces user interface feature. This feature contains two kinds of use
 
 This project is a tool for developers to easily adapt user interface feature in iOS 13.
 
-Tap **Like** if you like it.
+## **Star** if you like it.
 
 [中文版本](https://zhuanlan.zhihu.com/p/78728387)
 
