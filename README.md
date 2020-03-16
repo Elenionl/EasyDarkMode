@@ -10,6 +10,8 @@ iOS 13 introduces user interface feature. This feature contains two kinds of use
 
 This project is a tool for developers to easily adapt user interface feature in iOS 13.
 
+Tap **Like** if you like it.
+
 [中文版本](https://zhuanlan.zhihu.com/p/78728387)
 
 ## Samples
@@ -32,13 +34,13 @@ Then, if you are using network image, choose the download method you preferred (
 
 |Podfile script | Objective-C | Swift | Local image | SDWebImage | Kingfisher | Custom download |
 | --- | --- | --- | --- | --- | --- | --- |
- `pod 'EasyDarkMode'` or `pod 'EasyDarkMode/Core'` | **✓** | ✗ | **✓** | ✗ | ✗ | ✗ |
-| `pod 'EasyDarkMode/Core-Swift'` | ✗ | **✓** | **✓** | ✗ | ✗ | ✗ |
-| `pod 'EasyDarkMode/SDWebImage'` | **✓** | ✗ | **✓** | **✓** | ✗ | ✗ |
-| `pod 'EasyDarkMode/SDWebImage+Swift'` | ✗ | **✓** | **✓** | **✓** | ✗ | ✗ |
-| `pod 'EasyDarkMode/Kingfisher'` | ✗ | **✓** | **✓** | ✗ | **✓** | ✗ |
-| `pod 'EasyDarkMode/Remote'` | **✓** | ✗ | **✓** | ✗ | ✗ | **✓** |
-| `pod 'EasyDarkMode/Remote-Swift'` | ✗ | **✓** | **✓** | ✗ | ✗ | **✓** |
+ `pod 'EasyDarkMode'` or `pod 'EasyDarkMode/Core'` | ● | ○ | ● | ○ | ○ | ○ |
+| `pod 'EasyDarkMode/Core-Swift'` | ○ | ● | ● | ○ | ○ | ○ |
+| `pod 'EasyDarkMode/SDWebImage'` | ● | ○ | ● | ● | ○ | ○ |
+| `pod 'EasyDarkMode/SDWebImage+Swift'` | ○ | ● | ● | ● | ○ | ○ |
+| `pod 'EasyDarkMode/Kingfisher'` | ○ | ● | ● | ○ | ● | ○ |
+| `pod 'EasyDarkMode/Remote'` | ● | ○ | ● | ○ | ○ | ● |
+| `pod 'EasyDarkMode/Remote-Swift'` | ○ | ● | ● | ○ | ○ | ● |
 
 ## How to use
 
@@ -172,12 +174,12 @@ DMDownloadManager.shared.downloader = ^(NSURL * _Nonnull data, DMDownloadHandler
 
 ## TODO
 
-[✓] Support UIImage/UIColor
+[●] Support UIImage/UIColor
 
-[✓] Support SDWebImage
+[●] Support SDWebImage
 
-[✓] Support KingFisher.
+[●] Support KingFisher.
 
-[  ] Find a way to support NSTextAttachment in NSAttributedString.
+[○] Find a way to support NSTextAttachment in NSAttributedString.
 
-[  ] Find a way to support web image for NSTextAttachment.
+[○] Find a way to support web image for NSTextAttachment.
