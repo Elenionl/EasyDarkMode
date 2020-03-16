@@ -32,7 +32,7 @@ Then, if you are using network image, choose the download method you preferred (
 
 |Podfile script | Objective-C | Swift | Local image | SDWebImage | Kingfisher | Custom download |
 | --- | --- | --- | --- | --- | --- | --- |
- `pod 'EasyDarkMode'` or `pod 'EasyDarkMode/Core'` || **✓** | ✗ | **✓** | ✗ | ✗ | ✗ |
+ `pod 'EasyDarkMode'` or `pod 'EasyDarkMode/Core'` | **✓** | ✗ | **✓** | ✗ | ✗ | ✗ |
 | `pod 'EasyDarkMode/Core-Swift'` | ✗ | **✓** | **✓** | ✗ | ✗ | ✗ |
 | `pod 'EasyDarkMode/SDWebImage'` | **✓** | ✗ | **✓** | **✓** | ✗ | ✗ |
 | `pod 'EasyDarkMode/SDWebImage+Swift'` | ✗ | **✓** | **✓** | **✓** | ✗ | ✗ |
@@ -178,6 +178,6 @@ DMDownloadManager.shared.downloader = ^(NSURL * _Nonnull data, DMDownloadHandler
 
 [✓] Support KingFisher.
 
-[*] Find a way to support NSTextAttachment in NSAttributedString.
+[  ] Find a way to support NSTextAttachment in NSAttributedString.
 
-[*] Find a way to support web image for NSTextAttachment.
+[  ] Find a way to support web image for NSTextAttachment.
