@@ -53,7 +53,7 @@ Included in pod `'EasyDarkMode/Core-Swift'`
 ``` Swift
 import EasyDarkMode
 
-view.backgroundColor = UIColor.dm.color(color: , dark: UIColor.white)
+view.backgroundColor = UIColor.dm.color(white:UIColor.black , dark: UIColor.white)
 ```
 
 * Objective-C
