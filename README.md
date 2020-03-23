@@ -12,8 +12,6 @@ This project is a tool for developers to easily adapt user interface feature in 
 
 ## **Star** if you like it.
 
-[中文版本](https://zhuanlan.zhihu.com/p/78728387)
-
 ## Samples
 
 ![video](https://raw.githubusercontent.com/Elenionl/EasyDarkMode/master/Sample/demo.mov?token=AD5OKW6SDH6NR7ZNXDIYRDK5MKS7U)
