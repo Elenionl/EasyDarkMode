@@ -138,17 +138,17 @@ class ViewController: UIViewController {
     
     lazy var easyDarkModeImage: UIView = {
         let item = UIButton()
-//        item.image = UIImage.dm.image(name: "check_light", dark: "check_dark")?.dm.buttonImage
+//        item.image = UIImage.dm.image(name: "check_light", dark: "check_dark")
         let image = UIImage.dm.image(name: "check_light", dark: "check_dark")
         item.setImage(image, for: UIControl.State.normal)
         return item
     }()
     
     lazy var easyDarkModeSecondImage: UIView = {
-            let item = UIButton()
-//            item.image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")?.dm.buttonImage
-            let image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")
-            item.setImage(image, for: UIControl.State.normal)
+            let item = UIImageView()
+            item.image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")
+//            let image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")
+//            item.setImage(image, for: UIControl.State.normal)
             return item
         }()
     
