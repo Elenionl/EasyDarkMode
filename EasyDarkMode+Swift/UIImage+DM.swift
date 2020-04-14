@@ -21,3 +21,9 @@ public extension InterfaceAdaptor where Base == UIImage.Type {
         return base.dm_image(withNameLight: light, dark: dark)
     }
 }
+
+public extension InterfaceAdaptor where Base == UIImage {
+    var buttonImage: UIImage {
+        return base.dm_button
+    }
+}

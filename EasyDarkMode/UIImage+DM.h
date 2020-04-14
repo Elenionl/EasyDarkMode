@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (nullable UIImage *)dm_imageWithNameLight:(NSString *)light dark:(nullable NSString *)dark;
 
+@property (readonly) UIImage *dm_buttonImage;
+
 @end
 
 NS_ASSUME_NONNULL_END
