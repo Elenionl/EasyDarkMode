@@ -15,7 +15,7 @@
 - (void)dm_setImageUrlLight:(NSURL *)light dark:(NSURL *)dark forState:(UIControlState)state {
     __weak __auto_type selfWeak = self;
     [UIImage dm_imageWithUrlLight:light dark:dark completion:^(UIImage * _Nullable image, NSError * _Nullable error) {
-        [selfWeak setImage:image.dm_buttonImage forState:state];
+        [selfWeak setImage:image forState:state];
     }];
 }
 

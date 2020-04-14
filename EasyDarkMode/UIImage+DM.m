@@ -16,13 +16,16 @@
     }
 #if __IPHONE_13_0
     if (@available(iOS 13.0, *)) {
-//        UIImage *image = light ?: UIImage.new;
         UITraitCollection *lightCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
         UITraitCollection *darkCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
+        UITraitCollection *unspecified = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleUnspecified];
         UIImage *image = UIImage.new;
         [image.imageAsset registerImage:light withTraitCollection:lightCollection];
         [image.imageAsset registerImage:dark withTraitCollection:darkCollection];
-        return image;
+        UIImage *newImage = [[image.imageAsset imageWithTraitCollection:unspecified] copy];
+        [newImage.imageAsset registerImage:[image.imageAsset imageWithTraitCollection:lightCollection] withTraitCollection:lightCollection];
+        [newImage.imageAsset registerImage:[image.imageAsset imageWithTraitCollection:darkCollection] withTraitCollection:darkCollection];
+        return newImage;
     } else {
 #endif
         return light;
@@ -38,21 +41,6 @@
     }
     UIImage *darkImage = [UIImage imageNamed:dark];
     return [self dm_imageWithImageLight:lightImage dark:darkImage];
-}
-
-- (UIImage *)dm_buttonImage {
-    if (@available(iOS 12.0, *)) {
-        UITraitCollection *lightCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
-        UITraitCollection *darkColleciton = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
-        UITraitCollection *unspecified = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleUnspecified];
-        UIImage *newImage = [[self.imageAsset imageWithTraitCollection:unspecified] copy];
-        [newImage.imageAsset registerImage:[self.imageAsset imageWithTraitCollection:lightCollection] withTraitCollection:lightCollection];
-        [newImage.imageAsset registerImage:[self.imageAsset imageWithTraitCollection:darkColleciton] withTraitCollection:darkColleciton];
-        return newImage;
-    } else {
-        return self;
-    }
-    
 }
 
 @end

@@ -170,21 +170,6 @@ DMDownloadManager.shared.downloader = ^(NSURL * _Nonnull data, DMDownloadHandler
 
 * It has an various deployment target version from iOS 8 to iOS 13.
 
-## FAQ
-
-1. When I called `setImage:forState:` function of `UIButton` with `UIImage` object created by `EasyDarkMode` functions, the image vanish or can not change correctly according to `UserInterfaceStyle` change.
-This may be caused by some unknown implementation of class `UIButton`, `UIColor`, `UIImageAsset` or `UITraitCollection`. `EasyDarkMode` offer a bypass property in `UIImage`'s category:
-``` Objective-C
-UIImage *image = [UIImage dm_imageWithNameLight:@"check_light" dark:@""check_dark""];
-[button setImage:image.dm_buttonImage forState: UIControlStateNormal];
-```
-
-``` Swift
-let image = UIImage.dm.image(name: "check_light", dark: "check_dark")
-item.setImage(image?.dm.buttonImage, for: UIControl.State.normal)
-```
-
-
 ## TODO
 
 [●] Support UIImage/UIColor

@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         }
         scrollView.addSubview(easyDarkModeImageLabel)
         scrollView.addSubview(easyDarkModeImage)
+        scrollView.addSubview(easyDarkModeSecondImage)
         easyDarkModeImageLabel.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
             make.top.equalTo(systemImpl.snp.bottom).offset(10)
@@ -42,6 +43,11 @@ class ViewController: UIViewController {
         }
         easyDarkModeImage.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
+            make.top.equalTo(easyDarkModeImageLabel.snp.bottom).offset(10)
+            make.width.height.equalTo(25)
+        }
+        easyDarkModeSecondImage.snp.makeConstraints { (make) in
+            make.left.equalTo(easyDarkModeImage.snp.right).offset(10)
             make.top.equalTo(easyDarkModeImageLabel.snp.bottom).offset(10)
             make.width.height.equalTo(25)
         }
@@ -132,11 +138,19 @@ class ViewController: UIViewController {
     
     lazy var easyDarkModeImage: UIView = {
         let item = UIButton()
-//        item.image = UIImage.dm.image(name: "check_light", dark: "check_dark")
+//        item.image = UIImage.dm.image(name: "check_light", dark: "check_dark")?.dm.buttonImage
         let image = UIImage.dm.image(name: "check_light", dark: "check_dark")
-        item.setImage(image?.dm.buttonImage, for: UIControl.State.normal)
+        item.setImage(image, for: UIControl.State.normal)
         return item
     }()
+    
+    lazy var easyDarkModeSecondImage: UIView = {
+            let item = UIButton()
+//            item.image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")?.dm.buttonImage
+            let image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")
+            item.setImage(image, for: UIControl.State.normal)
+            return item
+        }()
     
     lazy var easyDarkModeColorLabel: UILabel = {
         let item = UILabel()
