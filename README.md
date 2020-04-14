@@ -170,6 +170,8 @@ DMDownloadManager.shared.downloader = ^(NSURL * _Nonnull data, DMDownloadHandler
 
 * It has an various deployment target version from iOS 8 to iOS 13.
 
+* We found that enable appearence image set in `xcassets` leads to dramatic lagging in application startup. Some walkaround like combine images into one `UIImage` object manually is necessory, if you are working with a giant application.
+
 ## TODO
 
 [●] Support UIImage/UIColor
