@@ -16,6 +16,7 @@ FOUNDATION_EXPORT const unsigned char EasyDarkModeVersionString[];
 
 #import <EasyDarkMode/UIColor+DM.h>
 #import <EasyDarkMode/UIImage+DM.h>
+#import <EasyDarkMode/DMManager.h>
 
 
 #if __has_include(<EasyDarkMode/EasyDarkMode+Remote.h>)

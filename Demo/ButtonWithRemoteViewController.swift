@@ -20,7 +20,7 @@ class ButtonWithRemoteViewController: UIViewController {
     
     lazy var easySdImageButton: UIView = {
         let item = UIButton()
-        item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
+        item.dm.setImagePathString(light: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
         return item
     }()
 

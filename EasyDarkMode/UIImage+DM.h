@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (DM)
 
-+ (nullable UIImage *)dm_imageWithImageLight:(UIImage *)light dark:(nullable UIImage *)dark;
++ (UIImage *)dm_imageWithImageLight:(UIImage *)light dark:(UIImage *)dark;
 
-+ (nullable UIImage *)dm_imageWithNameLight:(NSString *)light dark:(nullable NSString *)dark;
++ (nullable UIImage *)dm_imageWithNameLight:(NSString *)light dark:(NSString *)dark;
 
 @end
 

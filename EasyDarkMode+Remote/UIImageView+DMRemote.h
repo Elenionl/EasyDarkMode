@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (DMRemote)
 
-- (void)dm_setImageUrlLight:(nullable NSURL *)light dark:(nullable NSURL *)dark;
+- (void)dm_setImageUrlLight:(NSURL *)light dark:(NSURL *)dark;
 
-- (void)dm_setImagePathStringLight:(nullable NSString *)light dark:(nullable NSString *)dark;
+- (void)dm_setImagePathStringLight:(NSString *)light dark:(NSString *)dark;
 
 @end
 

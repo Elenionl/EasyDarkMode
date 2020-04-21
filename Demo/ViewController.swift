@@ -120,6 +120,7 @@ class ViewController: UIViewController {
         let item = UILabel()
         item.text = "System implement with assets."
         item.textAlignment = .center
+        item.textColor = UIColor.dm.color(light: UIColor.black, dark: UIColor.white)
         return item
     }()
     
@@ -133,20 +134,21 @@ class ViewController: UIViewController {
         let item = UILabel()
         item.text = "Easy dark mode image."
         item.textAlignment = .center
+        item.textColor = UIColor.dm.color(light: UIColor.black, dark: UIColor.white)
         return item
     }()
     
     lazy var easyDarkModeImage: UIView = {
         let item = UIButton()
 //        item.image = UIImage.dm.image(name: "check_light", dark: "check_dark")
-        let image = UIImage.dm.image(name: "check_light", dark: "check_dark")
+        let image = UIImage.dm.imageName(light: "check_light", dark: "check_dark")
         item.setImage(image, for: UIControl.State.normal)
         return item
     }()
     
     lazy var easyDarkModeSecondImage: UIView = {
             let item = UIImageView()
-            item.image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")
+        item.image = UIImage.dm.imageName(light: "check_light-1", dark: "check_dark-1")
 //            let image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")
 //            item.setImage(image, for: UIControl.State.normal)
             return item
@@ -156,20 +158,21 @@ class ViewController: UIViewController {
         let item = UILabel()
         item.text = "Easy dark mode color."
         item.textAlignment = .center
+        item.textColor = UIColor.dm.color(light: UIColor.black, dark: UIColor.white)
         return item
     }()
     
     lazy var easyDarkModeColor: UILabel = {
         let item = UILabel()
-        item.backgroundColor = UIColor.dm.color(color: UIColor.black, dark: UIColor.white)
+        item.backgroundColor = UIColor.dm.color(light: UIColor.black, dark: UIColor.white)
         item.text = "This label's color can change with trait."
-        item.textColor = UIColor.dm.color(color: UIColor.white, dark: UIColor.black)
+        item.textColor = UIColor.dm.color(light: UIColor.white, dark: UIColor.black)
         return item
     }()
     
     lazy var divider: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.dm.color(color: UIColor.gray, dark: UIColor.gray)
+        view.backgroundColor = UIColor.dm.color(light: UIColor.gray, dark: UIColor.gray)
         return view
     }()
     
@@ -177,12 +180,13 @@ class ViewController: UIViewController {
         let item = UILabel()
         item.text = "Image with SDWebImage."
         item.textAlignment = .center
+        item.textColor = UIColor.dm.color(light: UIColor.black, dark: UIColor.white)
         return item
     }()
     
     lazy var easySdImage: UIView = {
         let item = UIImageView()
-        UIImage.dm.image(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg") { (result) in
+        UIImage.dm.imagePathString(light: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg") { (result) in
             switch result {
             case .success(let image):
                 item.image = image
@@ -197,12 +201,13 @@ class ViewController: UIViewController {
         let item = UILabel()
         item.text = "Image in UIImageView with SDWebImage."
         item.textAlignment = .center
+        item.textColor = UIColor.dm.color(light: UIColor.black, dark: UIColor.white)
         return item
     }()
     
     lazy var easySdImageView: UIView = {
         let item = UIImageView()
-        item.dm.setImage(stringPath: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg")
+        item.dm.setImagePathString(light: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg")
         return item
     }()
     
@@ -210,12 +215,13 @@ class ViewController: UIViewController {
         let item = UILabel()
         item.text = "Image in UIButton with SDWebImage."
         item.textAlignment = .center
+        item.textColor = UIColor.dm.color(light: UIColor.black, dark: UIColor.white)
         return item
     }()
     
     lazy var easySdImageButton: UIView = {
         let item = UIButton()
-        item.dm.setImage(pathString: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
+        item.dm.setImagePathString(light: "http://img.mp.itc.cn/upload/20160525/73e975795bf94f82baf43315f89a30b1_th.jpg", dark: "http://img.mp.itc.cn/upload/20160525/5d6588b3c928495a9ee0eb2b0b672936_th.jpg", for: UIControl.State.normal)
         return item
     }()
 }

@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+DM.h"
+#import "DMManager.h"
 
 @implementation UIColor (DM)
 
@@ -16,7 +17,7 @@
         return [self colorWithDynamicProvider:^UIColor * _Nonnull(UITraitCollection * _Nonnull traitCollection) {
             switch (traitCollection.userInterfaceStyle) {
                 case UIUserInterfaceStyleDark:
-                    return dark ?: light;
+                    return dark;
                 case UIUserInterfaceStyleLight:
                 case UIUserInterfaceStyleUnspecified:
                 default:
@@ -25,7 +26,14 @@
         }];
     } else {
 #endif
-        return light;
+        switch (DMManager.shared.interfaceStyleForLowerSystem) {
+            case DMUserInterfaceStyleDark:
+                return dark;
+            case DMUserInterfaceStyleLight:
+            case DMUserInterfaceStyleUnspecified:
+            default:
+                return light;
+        }
 #if __IPHONE_13_0
     }
 #endif

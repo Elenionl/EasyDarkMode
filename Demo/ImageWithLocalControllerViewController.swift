@@ -20,7 +20,7 @@ class ImageWithLocalControllerViewController: UIViewController {
     
     lazy var easyDarkModeImage: UIImageView = {
         let item = UIImageView()
-        item.image = UIImage.dm.image(name: "check_light", dark: "check_dark")
+        item.image = UIImage.dm.imageName(light: "check_light", dark: "check_dark")
         return item
     }()
 

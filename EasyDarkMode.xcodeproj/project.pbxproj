@@ -40,6 +40,8 @@
 		2C9B3D8324188731003B279C /* ButtonWithRemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B3D8224188731003B279C /* ButtonWithRemoteViewController.swift */; };
 		2CDAD937230D6E3500D97343 /* UIImage+DMRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDAD935230D6E3500D97343 /* UIImage+DMRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CDAD938230D6E3500D97343 /* UIImage+DMRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAD936230D6E3500D97343 /* UIImage+DMRemote.m */; };
+		2CDD5A9B244EED9700068C1D /* DMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDD5A99244EED9700068C1D /* DMManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CDD5A9C244EED9700068C1D /* DMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD5A9A244EED9700068C1D /* DMManager.m */; };
 		739C0A4AF03ED821D8C02880 /* Pods_EasyDarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CD434965FAB4FCDBFB6ED4 /* Pods_EasyDarkMode.framework */; };
 		D84A520585A6D061254BD38E /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9561418EFE6969221FE652 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +108,8 @@
 		2C9B3D8224188731003B279C /* ButtonWithRemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithRemoteViewController.swift; sourceTree = "<group>"; };
 		2CDAD935230D6E3500D97343 /* UIImage+DMRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DMRemote.h"; sourceTree = "<group>"; };
 		2CDAD936230D6E3500D97343 /* UIImage+DMRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DMRemote.m"; sourceTree = "<group>"; };
+		2CDD5A99244EED9700068C1D /* DMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMManager.h; sourceTree = "<group>"; };
+		2CDD5A9A244EED9700068C1D /* DMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMManager.m; sourceTree = "<group>"; };
 		3A9561418EFE6969221FE652 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BAAB0DD22DF4C64D440AA1 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		74CBA4EBC75FA8436E753320 /* Pods-EasyDarkMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDarkMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyDarkMode/Pods-EasyDarkMode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				2C899E3823007E3000BBED4F /* EasyDarkMode.h */,
+				2CDD5A99244EED9700068C1D /* DMManager.h */,
+				2CDD5A9A244EED9700068C1D /* DMManager.m */,
 				2C899E5A23007ED600BBED4F /* UIColor+DM.h */,
 				2C899E5923007ED600BBED4F /* UIColor+DM.m */,
 				2C899E5D23007ED700BBED4F /* UIImage+DM.h */,
@@ -270,6 +276,7 @@
 				2C899E6323007ED700BBED4F /* UIImage+DM.h in Headers */,
 				2C2E786D230D841F0037D7D4 /* EasyDarkMode+Remote.h in Headers */,
 				2C2E7871230D85C70037D7D4 /* EasyDarkMode+SD.h in Headers */,
+				2CDD5A9B244EED9700068C1D /* DMManager.h in Headers */,
 				2C2E7865230D7D660037D7D4 /* UIButton+DMRemote.h in Headers */,
 				2CDAD937230D6E3500D97343 /* UIImage+DMRemote.h in Headers */,
 				2C2E7861230D76440037D7D4 /* DMDownloadManager.h in Headers */,
@@ -329,7 +336,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Elenion;
 				TargetAttributes = {
 					2C899E3423007E3000BBED4F = {
@@ -463,6 +470,7 @@
 				2C2E7866230D7D660037D7D4 /* UIButton+DMRemote.m in Sources */,
 				2C2E786A230D82790037D7D4 /* UIImageView+DMRemote.m in Sources */,
 				2C2E7878230D87550037D7D4 /* EasyDarkMode+KF.swift in Sources */,
+				2CDD5A9C244EED9700068C1D /* DMManager.m in Sources */,
 				2C4A2CF9230EBCCB0002A8B6 /* UIColor+DM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -606,10 +614,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

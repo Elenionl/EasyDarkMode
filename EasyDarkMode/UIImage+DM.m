@@ -7,6 +7,7 @@
 //
 
 #import "UIImage+DM.h"
+#import "DMManager.h"
 
 @implementation UIImage (DM)
 
@@ -28,7 +29,14 @@
         return newImage;
     } else {
 #endif
-        return light;
+        switch (DMManager.shared.interfaceStyleForLowerSystem) {
+            case DMUserInterfaceStyleDark:
+                return dark;
+            case DMUserInterfaceStyleLight:
+            case DMUserInterfaceStyleUnspecified:
+            default:
+                return light;
+        }
 #if __IPHONE_13_0
     }
 #endif

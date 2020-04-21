@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (DM)
 
-// Create color with static light and dark colors.
-+ (UIColor *)dm_colorWithColorLight:(UIColor *)light dark:(nullable UIColor *)dark;
+// Create color with light and dark colors.
++ (UIColor *)dm_colorWithColorLight:(UIColor *)light dark:(UIColor *)dark;
 
 @end
 
