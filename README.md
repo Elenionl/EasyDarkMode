@@ -3,6 +3,8 @@
 ![version](https://img.shields.io/cocoapods/v/EasyDarkMode)
 ![license](https://img.shields.io/github/license/Elenionl/EasyDarkMode)
 ![platform](https://img.shields.io/cocoapods/p/EasyDarkMode)
+![Swfit](https://img.shields.io/badge/Swfit-●-orange)
+![Objective-C](https://img.shields.io/badge/Objective--C-●-blue)
 
 ## Introduction
 
