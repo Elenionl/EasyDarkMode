@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         scrollView.addSubview(easyDarkModeImageLabel)
         scrollView.addSubview(easyDarkModeImage)
         scrollView.addSubview(easyDarkModeSecondImage)
+        scrollView.addSubview(easyDarkModeThirdImage)
         easyDarkModeImageLabel.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
             make.top.equalTo(systemImpl.snp.bottom).offset(10)
@@ -48,6 +49,11 @@ class ViewController: UIViewController {
         }
         easyDarkModeSecondImage.snp.makeConstraints { (make) in
             make.left.equalTo(easyDarkModeImage.snp.right).offset(10)
+            make.top.equalTo(easyDarkModeImageLabel.snp.bottom).offset(10)
+            make.width.height.equalTo(25)
+        }
+        easyDarkModeThirdImage.snp.makeConstraints { (make) in
+            make.right.equalTo(easyDarkModeImage.snp.left).offset(-10)
             make.top.equalTo(easyDarkModeImageLabel.snp.bottom).offset(10)
             make.width.height.equalTo(25)
         }
@@ -147,12 +153,20 @@ class ViewController: UIViewController {
     }()
     
     lazy var easyDarkModeSecondImage: UIView = {
-            let item = UIImageView()
-        item.image = UIImage.dm.imageName(light: "check_light-1", dark: "check_dark-1")
-//            let image = UIImage.dm.image(name: "check_light-1", dark: "check_dark-1")
-//            item.setImage(image, for: UIControl.State.normal)
-            return item
-        }()
+        let item = UIButton()
+//        item.image = UIImage.dm.imageName(light: "check_light-1", dark: "check_dark-1")
+        let image = UIImage.dm.imageName(light: "check_light-1", dark: "check_dark-1")
+        item.setImage(image, for: UIControl.State.normal)
+        return item
+    }()
+    
+    lazy var easyDarkModeThirdImage: UIView = {
+        let item = UIButton()
+    //        item.image = UIImage.dm.imageName(light: "check_light-1", dark: "check_dark-1")
+        let image = UIImage.dm.imageName(light: "check_light-2", dark: "check_dark-2")
+        item.setImage(image, for: UIControl.State.normal)
+        return item
+    }()
     
     lazy var easyDarkModeColorLabel: UILabel = {
         let item = UILabel()

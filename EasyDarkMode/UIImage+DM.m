@@ -17,16 +17,13 @@
     }
 #if __IPHONE_13_0
     if (@available(iOS 13.0, *)) {
-        UITraitCollection *lightCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
-        UITraitCollection *darkCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
-        UITraitCollection *unspecified = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleUnspecified];
-        UIImage *image = UIImage.new;
-        [image.imageAsset registerImage:light withTraitCollection:lightCollection];
-        [image.imageAsset registerImage:dark withTraitCollection:darkCollection];
-        UIImage *newImage = [[image.imageAsset imageWithTraitCollection:unspecified] copy];
-        [newImage.imageAsset registerImage:[image.imageAsset imageWithTraitCollection:lightCollection] withTraitCollection:lightCollection];
-        [newImage.imageAsset registerImage:[image.imageAsset imageWithTraitCollection:darkCollection] withTraitCollection:darkCollection];
-        return newImage;
+        UITraitCollection *const scaleTraitCollection = [UITraitCollection currentTraitCollection];
+        UITraitCollection *const darkUnscaledTraitCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
+        UITraitCollection *const darkScaledTraitCollection = [UITraitCollection traitCollectionWithTraitsFromCollections:@[scaleTraitCollection, darkUnscaledTraitCollection]];
+        UIImage *image = [light imageWithConfiguration:[light.configuration configurationWithTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight]]];
+        UIImage *darkImage = [dark imageWithConfiguration:[dark.configuration configurationWithTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark]]];
+        [image.imageAsset registerImage:darkImage withTraitCollection:darkScaledTraitCollection];
+        return image;
     } else {
 #endif
         switch (DMManager.shared.interfaceStyleForLowerSystem) {
