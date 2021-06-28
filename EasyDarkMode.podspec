@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.author             = { "Elenion" => "stellanxu@gmail.com" }
   s.social_media_url   = "https://github.com/Elenionl"
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "10.0"
 
   s.source       = { :git => "https://github.com/Elenionl/EasyDarkMode.git", :tag => "#{s.version}" }
   s.swift_versions = '5.0'

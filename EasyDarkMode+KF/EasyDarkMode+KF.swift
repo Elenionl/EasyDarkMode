@@ -13,8 +13,13 @@ public extension DMDownloadManager {
     func connectWithKingfisher() {
         let manageDownloader = KingfisherManager.shared.downloader
         downloader = { (url, completion) in
-            manageDownloader.downloadImage(with: url, retrieveImageTask: nil, options: nil, progressBlock: nil) { (image, erorr, _, _) in
-                completion(image, erorr)
+            manageDownloader.downloadImage(with: url, options: nil) { result in
+                switch result {
+                case .success(let successResult):
+                    completion(successResult.image, nil)
+                case .failure(let error):
+                    completion(nil, error)
+                }
             }
         }
     }
